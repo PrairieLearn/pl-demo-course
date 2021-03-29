@@ -1,0 +1,43 @@
+{
+    "uuid": "13D012E4-9C66-4092-BA1A-1445919DB0C3",
+    "type": "Homework",
+    "title": "Homework with unlimited attempts",
+    "set": "Homework",
+    "number": "1",
+    "allowAccess": [
+        {
+            "role": "TA",
+            "credit": 100
+        },
+        {
+            "comment": "Set end date for 100% credit",
+            "mode": "Public",
+            "credit": 100,
+            "startDate": "2021-01-01T00:00:01",
+            "endDate": "2021-12-31T23:59:59"
+       },
+       {
+           "comment": "Set later end date for reduced credit",
+           "mode": "Public",
+           "credit": 50,
+           "startDate": "2021-01-01T00:00:01",
+           "endDate": "2022-01-31T23:59:59"
+      },
+      {
+          "comment": "Set another end date, potentially end of the term, for zero credit (can practice, but no longer earn points for the assessement)",
+          "mode": "Public",
+          "credit": 0,
+          "startDate": "2021-01-01T00:00:01",
+          "endDate": "2022-12-31T23:59:59"
+     }
+    ],
+    "zones": [
+        {
+            "title": "Fundamental questions",
+            "questions": [
+                { "id": "Mathematics/integerInputWithDynamicFigure", "points": 1, "maxPoints": 2},
+                { "id": "Mathematics/mathNumbersConcept", "points": 1, "maxPoints": 2}
+            ]
+        }
+    ]
+}

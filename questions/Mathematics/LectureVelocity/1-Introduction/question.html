@@ -1,0 +1,54 @@
+<pl-question-panel>
+
+<p>In Calculus we are often interested in computing how fast a quantity is changing. We may be interested in the average rate of change
+  of a function on a given interval, or the instantaneous rate of change of a function at a specified point.
+  For example, if the function represents the position of a moving object, the instantaneous rate of change is the velocity,
+  and can be expressed in units of feet per second, or kilometers per hour.
+For a moving object with position function $s(t)$, the average velocity on the interval $t=t_i$ and $t=t_f$ is given by: </p>
+$$v_a = \frac{s(t_f) - s(t_i)}{t_f - t_i}$$
+
+<div class="alert alert-info" role="alert">
+
+<p>Without loss of generality, we can write the average rate of change of a function $f(x)$ in the interval $[a, a+h]$ as:</p>
+
+$$v_a = \frac{f(a+h) - f(x)}{h}$$
+
+</div>
+
+<p> How does the average rate of change of a function is connected to its graph? Take a look at the graph below:</p>
+
+<p>
+<pl-figure file-name="figure1.png" type="dynamic" width="400px"></pl-figure>
+</p>
+
+<p> Construct a right triangle in which the hypotenuse connects the points $a$ and $b$. What are the lengths of the legs
+of this triangle?</p>
+
+<p>
+<pl-hide-in-panel answer="true">
+<pl-integer-input answers-name="base" label="$\textrm{base} = $" size=16 allow-blank=True></pl-integer-input>
+<pl-integer-input answers-name="height" label="$\textrm{height} = $" size=16 allow-blank=True></pl-integer-input>
+</pl-hide-in-panel>
+</p>
+
+<p> What is the slope of the line connecting points $a$ and $b$?</p>
+
+<p>
+<pl-hide-in-panel answer="true">
+<pl-number-input answers-name="slope" label="$\textrm{slope} = $" size=26 allow-blank=True></pl-number-input>
+</pl-hide-in-panel>
+</p>
+
+<p> Use the expression above to compute the average rate of change for the function $f(x)$ in the interval between points $a$ and $b$. </p>
+
+<p>
+<pl-hide-in-panel answer="true">
+<pl-number-input answers-name="va" label="$v_a = $" size=26 allow-blank=True></pl-number-input>
+</pl-hide-in-panel>
+</p>
+
+
+<p> Based on your answers above, how can we relate the average rate of change with a geometric interpretation of the function graph? </p>
+
+
+</pl-question-panel>

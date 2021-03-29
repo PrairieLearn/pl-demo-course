@@ -1,17 +1,17 @@
 {
     "uuid": "fe472cd2-4759-4c0d-9b19-7383ca9b2817",
-    "name": "TPL 101",
-    "title": "Template Course",
+    "name": "XC 100",
+    "title": "Demo Course",
     "assessmentSets": [
+        {"abbreviation": "L", "name": "Lecture", "heading": "Lecture Resources", "color": "blue1"}
     ],
     "options": {
         "useNewQuestionRenderer": true
     },
     "topics": [
-        {"name": "Template", "color": "orange1", "description": "Templates to copy as the start for a new question."}
+        {"name": "Math", "color": "orange1", "description": "Mathematics topics"},
+        {"name": "Engineering", "color": "orange1", "description": "Engineering topics"}
     ],
     "tags": [
-        {"name": "tpl101", "color": "gray1", "description": "Question originally written as templates for TPL 101 template course"},
-        {"name": "balamut2", "color": "orange1", "description": "Question originally written by balamut2"}
     ]
 }
