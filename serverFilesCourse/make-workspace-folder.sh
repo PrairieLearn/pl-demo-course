@@ -5,7 +5,7 @@ set -e
 dir=$PWD
 
 # These are the folders to be modified when creating the cleared versions
-folder=../questions/CS/MarkovChainGroupActivity/MarkovChains-Intro
+folder=../questions/CS/MarkovChainGroupActivity/MarkovChains-Gambler
 
 # copy all section files to the cleared directory
 # copy only if newer

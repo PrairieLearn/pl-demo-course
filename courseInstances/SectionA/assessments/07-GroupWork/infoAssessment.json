@@ -47,11 +47,8 @@
       {
         "title": " Markov Chain examples",
         "questions": [
-            {
-                "id": "CS/MarkovChainGroupActivity/MarkovChains-Intro",
-                "points": 1,
-                "maxPoints": 1
-            }
+            {"id": "CS/MarkovChainGroupActivity/MarkovChains-Intro","points": 1},
+            {"id": "CS/MarkovChainGroupActivity/MarkovChains-Gambler","points": 1}
         ]
       },
       {

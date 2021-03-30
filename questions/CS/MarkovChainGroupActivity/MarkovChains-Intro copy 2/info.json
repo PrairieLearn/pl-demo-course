@@ -1,6 +1,6 @@
 {
-    "uuid": "2dc15fd2-5b09-4050-8721-069ab8db9517",
-    "title": "Markov Chains Intro",
+    "uuid": "2ec15fd2-5b09-4050-8721-069ab7db9517",
+    "title": "Markov Chains",
     "topic": "Coding",
     "tags": [
         "workspace"
@@ -20,7 +20,7 @@
         "home": "/home/jovyan",
         "rewriteUrl": false,
         "gradedFiles": [
-            "Markov-Chains-1.ipynb"
+            "Markov Chains.ipynb"
         ]
     }
 }
