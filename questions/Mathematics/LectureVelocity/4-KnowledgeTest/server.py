@@ -1,4 +1,5 @@
 import random
+import math
 import numpy as np
 import matplotlib.pyplot as plt
 import io
@@ -36,22 +37,26 @@ def generate(data):
     # corresponding function values
     ft0 = round(f(t0,a,b,c),1)
     ft1 = round(f(t1,a,b,c),1)
-    data["params"]["ft0"] = ft0
-    data["params"]["ft1"] = ft1
 
     # find slope of secant
     data["correct_answers"]["va"] = (ft1-ft0) / (t1-t0)
     # find tangent slope
     data["correct_answers"]["vi"] = df(t2,a,b)
 
-    # origin
+    # adjusting the graph scale with the canvas scale for the overla
+    # this is the origin of the graph
     V0 = [60,345]
-    data["params"]["V_origin"] = create_dict_xy_coord(V0)
+    # these are the correct points at the curve
     p0 = [200*t0, 10*(ft0-10)]
     p1 = [200*t1, 10*(ft1-10)]
+    # only need to create these lines if we want to show the correct answer
+    data["params"]["V_origin"] = create_dict_xy_coord(V0)
     data["params"]["line"] = '[' + create_dict_xy_coord(p0) + ',' + create_dict_xy_coord(p1) + ']'
+    # this is the slope of the line using the canvas scale
+    slope_canvas = (p1[1] - p0[1])/(p1[0] - p0[0])
+    data["params"]["slope_canvas"] = slope_canvas
 
-    # checkbox
+    # checkbox correct answers and distractors
     sign = random.choice(["positive", "negative"])
     data["params"]["sign"] = sign
     tmax = b/(2*a)
@@ -106,3 +111,31 @@ def file(data):
     buf = io.BytesIO()
     plt.savefig(buf,format='png',transparent=True)
     return buf
+
+def grade(data):
+
+    # special grading to grade only the slope of the curve, based on the position of the end-points
+    total_score = 0
+    graded_variables = ["va", "vi", "geo", "geo2", "ts"]
+    max_score = len(graded_variables) + 1
+
+    for g in graded_variables:
+        total_score += data["partial_scores"][g]["score"]
+
+    graph = data['submitted_answers'].get("lines", None)
+    if graph is None:
+        # This won't happen, since the implementation of the pl-drawing will require a submitted answer
+        raise Exception('graphical submission does not exist')
+    else:
+        if (len(graph) != 1):
+            data["partial_scores"]["lines"]["feedback"] = "Only one line should be added to the graph area"
+            data["partial_scores"]["lines"]["score"] = 0
+        else:
+            item = graph[0]
+            st_slope = (item['y1'] - item['y2'])/ (item['x2'] - item['x1'] )
+
+    if np.allclose(st_slope, data["params"]["slope_canvas"], rtol=0.05):
+        total_score += 1
+        data["partial_scores"]["lines"]["score"] = 1
+
+    data["score"] = total_score/max_score
