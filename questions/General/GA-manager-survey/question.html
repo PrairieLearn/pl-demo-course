@@ -1,0 +1,43 @@
+<pl-question-panel>
+
+  <div class="alert alert-warning" role="alert">
+    This question should be submitted by the <strong>MANAGER</strong> of this team. Talk to your group and decide how you will split the roles in today's activity.
+  </div>
+
+  <p> Enter the <strong>netid</strong> of the student corresponding to the following roles: </p>
+</pl-question-panel>
+
+<p><pl-string-input answers-name="manager" label="Manager: " ignore-case=true remove-leading-trailing=true placeholder="netid" ></pl-string-input></p>
+<p><pl-string-input answers-name="reflector" label="Reflector: " ignore-case=true remove-leading-trailing=true placeholder="netid" ></pl-string-input></p>
+<p><pl-string-input answers-name="recorder" label="Recorder: " ignore-case=true remove-leading-trailing=true placeholder="netid" ></pl-string-input></p>
+
+<pl-question-panel>
+
+<p>If you have less than three participants attending the activity, then one of the students will be allowed to have more than one assigned role. Otherwise, a unique netid should be 
+  entered in each one of the above entries (do not leave them blank).
+</p>
+
+<p>If you have 4 members in your team, enter the netid below for the student that does not have an assigned role this week. If you have less than 4 members, leave the 
+  following entry field blank:
+</p>
+
+<p><pl-string-input answers-name="other" label="No assigned role: " ignore-case=true remove-leading-trailing=true placeholder="netid" allow-blank="true"></pl-string-input></p>
+
+
+<div class="alert alert-danger" role="alert">
+  Do not add netids for students that are not attending this GA meeting. We will be checking this information!
+</div>
+
+<div class="alert alert-primary" role="alert">
+  Your group should alternate the role assignments each week. At the end of each half semester, each student should have  
+  participated in each role at least once. This information will be used to determine your "participation points". 
+  You can find more information about roles and participation points on the 
+  <a href="https://courses.engr.illinois.edu/cs357/sp2021/pages/collaborate.html">Collaborate page</a>.
+</div>
+
+  <div class="alert alert-danger" role="alert">
+    ONLY THE MANAGER SHOULD CLICK "Save & Grade"!
+  </div>
+</pl-question-panel>
+
+
