@@ -16,7 +16,6 @@ def f(x,a,b,c):
 def df(x,a,b):
     return -2*a*x + b
 
-
 def generate(data):
 
     # equation coefficients
@@ -77,6 +76,29 @@ def generate(data):
 
     data['params']['t_options'] = dic
 
+
+def grade(data):
+
+    # Custom grade of the plot. Checking the slope of the plot
+    graph = data["submitted_answers"].get("lines")
+    # the above line will not fail, since the element parse function will fail if no submission is added to the plot area
+    if (len(graph) != 1):
+        data["format_errors"]["lines"] = "Invalid"
+        data["partial_scores"]["lines"]["feedback"] = "Only one line should be added to the graph area"
+        data["partial_scores"]["lines"]["score"] = 0
+    else:
+        item = graph[0]
+        st_slope = (item['y1'] - item['y2'])/ (item['x2'] - item['x1'] )
+        if np.allclose(st_slope, data["params"]["slope_canvas"], rtol=0.05):
+            data["partial_scores"]["lines"]["score"] = 1
+
+    # recomputing final score based on partial scores
+    total_score = 0
+    for var in data["partial_scores"]:
+        partial_score = data["partial_scores"][var]["score"]
+        total_score += partial_score
+    data["score"] = total_score/len(data["partial_scores"])
+
 ## The function 'file(data)' is used to generate the figure dynamically,
 ## given data defined in the 'generate' function
 def file(data):
@@ -111,31 +133,3 @@ def file(data):
     buf = io.BytesIO()
     plt.savefig(buf,format='png',transparent=True)
     return buf
-
-def grade(data):
-
-    # special grading to grade only the slope of the curve, based on the position of the end-points
-    total_score = 0
-    graded_variables = ["va", "vi", "geo", "geo2", "ts"]
-    max_score = len(graded_variables) + 1
-
-    for g in graded_variables:
-        total_score += data["partial_scores"][g]["score"]
-
-    graph = data['submitted_answers'].get("lines", None)
-    if graph is None:
-        # This won't happen, since the implementation of the pl-drawing will require a submitted answer
-        raise Exception('graphical submission does not exist')
-    else:
-        if (len(graph) != 1):
-            data["partial_scores"]["lines"]["feedback"] = "Only one line should be added to the graph area"
-            data["partial_scores"]["lines"]["score"] = 0
-        else:
-            item = graph[0]
-            st_slope = (item['y1'] - item['y2'])/ (item['x2'] - item['x1'] )
-
-    if np.allclose(st_slope, data["params"]["slope_canvas"], rtol=0.05):
-        total_score += 1
-        data["partial_scores"]["lines"]["score"] = 1
-
-    data["score"] = total_score/max_score
