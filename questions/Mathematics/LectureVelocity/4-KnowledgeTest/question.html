@@ -44,6 +44,11 @@ $$ s(t) = - {{params.a}} t^2 + {{params.b}} t + 30 $$
 </pl-overlay>
 
 
+<pl-submission-panel>
+{{#partial_scores.lines.feedback}}
+<p>{{partial_scores.lines.feedback}}</p>
+{{/partial_scores.lines.feedback}}
+</pl-submission-panel>
 
 The <pl-dropdown answers-name="geo" weight="1">
   <pl-answer correct="false">end-point</pl-answer>

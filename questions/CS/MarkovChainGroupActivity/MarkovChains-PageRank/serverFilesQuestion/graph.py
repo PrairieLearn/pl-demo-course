@@ -14,10 +14,10 @@ def _render_graph(graph, layout='dot'):
 
         def get_bytes(self):
             return self.data
-    
+
     graph.layout(layout)
     graphviz_data = graph.string()
-    
+
     buffer = TempFile()
     graph.draw(buffer, format='svg')
     return ipd.display(ipd.SVG(buffer.get_bytes()))
@@ -62,7 +62,9 @@ def draw_matrix(mat, mat_label=None, show_weights=True, round_digits=3, directed
     A square matrix is interpreted to be an adjacency/stochastic matrix, while a non-square
     matrix is a edge-incidence matrix.
     '''
-    
+
+    mat = mat.T
+
     if len(mat.shape) != 2:
         raise Exception(f"Input matrix has wrong dimensionality (gotten {len(mat.shape)}, expected 2).")
     if directed is None:

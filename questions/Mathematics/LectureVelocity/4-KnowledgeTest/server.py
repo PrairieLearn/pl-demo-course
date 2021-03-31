@@ -83,14 +83,16 @@ def grade(data):
     graph = data["submitted_answers"].get("lines")
     # the above line will not fail, since the element parse function will fail if no submission is added to the plot area
     if (len(graph) != 1):
-        data["format_errors"]["lines"] = "Invalid"
-        data["partial_scores"]["lines"]["feedback"] = "Only one line should be added to the graph area"
+        data["partial_scores"]["lines"]["feedback"] = "Graph submission is NOT valid! Only one line should be added to the graph area"
         data["partial_scores"]["lines"]["score"] = 0
     else:
         item = graph[0]
         st_slope = (item['y1'] - item['y2'])/ (item['x2'] - item['x1'] )
         if np.allclose(st_slope, data["params"]["slope_canvas"], rtol=0.05):
             data["partial_scores"]["lines"]["score"] = 1
+            data["partial_scores"]["lines"]["feedback"] = "The graph is correct"
+        else:
+            data["partial_scores"]["lines"]["feedback"] = "The graph is NOT correct"
 
     # recomputing final score based on partial scores
     total_score = 0
