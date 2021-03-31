@@ -1,6 +1,6 @@
 {
     "uuid": "2ec15fd2-5b09-4050-8721-069ab7db9517",
-    "title": "Markov Chains",
+    "title": "Markov Chains - PageRank",
     "topic": "Coding",
     "tags": [
         "workspace"
@@ -20,7 +20,7 @@
         "home": "/home/jovyan",
         "rewriteUrl": false,
         "gradedFiles": [
-            "Markov Chains.ipynb"
+            "Markov-Chains-3.ipynb"
         ]
     }
 }

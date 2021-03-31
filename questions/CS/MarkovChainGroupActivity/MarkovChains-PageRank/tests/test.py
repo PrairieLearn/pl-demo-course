@@ -3,54 +3,9 @@ from pl_unit_test import PLTestCase
 from code_feedback import Feedback
 import numpy as np
 
-def convert_to_float_array(array):
-    if type(array) is np.ndarray:
-        converted = array.astype(float)
-    else:
-        converted = array
-    return converted
-
-
 class Test(PLTestCase):
 
-    student_code_file = 'Markov Chains.ipynb'
-
-    @points(1)
-    @name("Testing function power_iteration")
-    def test_0(self):
-        points = 0
-        # use the same input vector for both u and v to avoid ambiguity in the order of iteration
-        results = Feedback.call_user(
-            self.st.power_iteration, self.ref.M_test, self.ref.x_test)
-        if results is None:
-            Feedback.add_feedback(
-                'Your function is not returning any variables.')
-            self.fail()
-        if Feedback.check_numpy_array_allclose('The return value from your function power_iteration', self.ref.xc, results):
-            points += 0.5
-        results_hidden = Feedback.call_user(
-            self.st.power_iteration, self.ref.M_hidden, self.ref.x_hidden)
-        if Feedback.check_numpy_array_allclose('The return value from your function power_iteration (hidden test case)', self.ref.xc_hidden, results_hidden):
-            points += 0.5
-        Feedback.set_score(points)
-    
-    @points(1)
-    @name("Testing Gambler Markov Matrix G")
-    def test_1(self):
-        points = 0
-        if Feedback.check_numpy_array_allclose('G', self.ref.G, self.st.G):
-            points += 1
-        Feedback.set_score(points)
-
-    @points(1)
-    @name("Testing probability of winning and losing xstar2")
-    def test_2(self):
-        points = 0
-        xstar2 = convert_to_float_array(self.st.xstar2)
-        if Feedback.check_numpy_array_allclose('xstar2', self.ref.xstar2, xstar2):
-            points += 1
-        Feedback.set_score(points)
-
+    student_code_file = 'Markov-Chains-3.ipynb'
 
     @points(1)
     @name("Testing PageRank Markov Matrix M2")
@@ -59,7 +14,7 @@ class Test(PLTestCase):
         if Feedback.check_numpy_array_allclose('M2', self.ref.M2, self.st.M2):
                 points += 1
         Feedback.set_score(points)
-    
+
     @points(1)
     @name("Testing larger example Markov Matrix M3")
     def test_4(self):

@@ -7,20 +7,6 @@ def power_iteration(M, x):
         xc = M @ xc
     return xc
 
-M_test = np.array([[0.3, 0.1], [0.7, 0.9]])
-x_test = np.array([1.0, 0.0])
-M_hidden = np.array([[0.4, 0.2], [0.6, 0.8]])
-x_hidden = np.array([0.0, 1.0])
-xc = power_iteration(M_test, x_test)
-xc_hidden = power_iteration(M_hidden, x_hidden)
-
-G = np.array([[1, 0.5,   0, 0],
-              [0,   0, 0.5, 0],
-              [0, 0.5,   0, 0],
-              [0,   0, 0.5, 1]])
-
-xstar2 = power_iteration(G, np.array([0.0, 0.0, 1.0, 0.0]))
-
 A = np.array([[0,  2,  0,  5],
               [1,  0,  5,  6],
               [2,  4,  0,  3],
