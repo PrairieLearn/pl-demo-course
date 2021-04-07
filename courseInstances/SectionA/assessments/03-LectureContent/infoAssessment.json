@@ -37,7 +37,6 @@
             "questions": [
                 { "id": "Mathematics/LectureVelocity/1-Introduction", "points": 1, "triesPerVariant": 4},
                 { "id": "Mathematics/LectureVelocity/2-Derivative", "points": 1},
-                { "id": "Mathematics/LectureVelocity/3-Example", "points": 1},
                 { "id": "Mathematics/LectureVelocity/4-KnowledgeTest", "points": 1, "triesPerVariant": 4}
             ]
         }
