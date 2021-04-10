@@ -1,0 +1,9 @@
+<pl-question-panel>
+<p>Select all of the following numbers that are {{params.concept}}.</p>
+</pl-question-panel>
+
+<pl-checkbox answers-name="ts" number-answers=7 fixed-order="true" partial-credit="true" min-correct=2>
+    {{#params.t_options}}
+        <pl-answer correct="{{tag}}">{{ans}}</pl-answer>
+    {{/params.t_options}}
+</pl-checkbox>

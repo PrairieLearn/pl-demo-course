@@ -1,0 +1,66 @@
+{
+    "uuid": "2ac41a99-3e86-4c19-bb82-9e06e4b930bc",
+    "type": "Homework",
+    "title": "Group Activity (can be done sync or async)",
+    "set": "Worksheet",
+    "number": "1",
+    "groupWork": true,
+    "groupMinSize": 1,
+    "groupMaxSize": 5,
+    "studentGroupCreate": true,
+    "studentGroupJoin": true,
+    "studentGroupLeave": true,
+    "allowAccess": [
+        {
+            "role": "TA",
+            "credit": 100
+        },
+        {
+            "mode": "Public",
+            "credit": 100,
+            "startDate": "2019-01-18T00:00:01",
+            "endDate": "2019-01-28T23:59:59"
+        },
+        {
+            "mode": "Public",
+            "credit": 50,
+            "startDate": "2019-01-28T00:00:01",
+            "endDate": "2019-01-30T23:59:59"
+        },
+        {
+            "mode": "Public",
+            "credit": 100,
+            "startDate": "2019-01-30T00:00:01"
+        }
+    ],
+    "zones": [
+      {
+        "title": " Role assignments (Manager survey)",
+        "questions": [
+            {
+                "id": "General/GA-manager-survey",
+                "points": 1,
+                "maxPoints": 1
+            }
+        ]
+      },
+      {
+        "title": " Markov Chain examples",
+        "questions": [
+            {"id": "MarkovChainGroupActivity/MarkovChains-Intro","points": 1},
+            {"id": "MarkovChainGroupActivity/MarkovChains-Gambler","points": 1},
+            {"id": "MarkovChainGroupActivity/MarkovChains-PageRank","points": 1}
+        ]
+      },
+      {
+        "title": "Debrief (Reflector survey)",
+        "questions": [
+            {
+                "id": "General/GA-reflector-survey",
+                "points": 1, "maxPoints": 1
+            }
+          ]
+      }
+    ],
+    "text": "<h2>Collaborative Learning</b></h2> <p>You are strongly encouraged to work with your team all at the same time. To help teams work together better, we recommend assigning team roles for all members. There are three team roles: manager, recorder, and reflector. You are expected to participate in each of these roles at least once this semester, and teams are encouraged to rotate these roles each week.</p><ul><li>Manager: Responsible for coordinating efforts of the team and making sure that all team members are contributing. For example, if a team member is silent for a while, it is the manager’s role to check in on the team member. The manager needs to make sure members of the team are working together to construct their answers. This is NOT a divide-and-conquer activity! The manager is responsible for completing the survey regarding the role assignments for that week.</li><li>Recorder: Responsible for being the main “driver,” entering most of the answers in PrairieLearn. However, other members of the team can also contribute by completing some of the notebook cells. The recorder is also expected to share their screen during the zoom meeting. This will help facilitating the discussions, and also provide a venue for staff members (that will be rotating between rooms) to interact with the teams.</li><li>Reflector: Responsible for making sure that all team members understand what’s going on. For example, the reflector might ask whether each team member understands the problem before moving on to the next problem. The reflector is responsible for completing a short survey at the end of each group assessment, including questions about team participation and the content of the activity.</li></ul></p>"
+  }

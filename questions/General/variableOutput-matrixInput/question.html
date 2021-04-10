@@ -1,0 +1,15 @@
+<pl-question-panel>
+<p>Given the vectors $\bf{u}$ and $\bf{v}$, and the scalars $\textrm{a}$ and $\textrm{b}$,
+compute the outer product ${\bf w} = \textrm{a} {\bf u} \otimes \textrm{b} {\bf v}$</p>
+
+<pl-variable-output show-mathematica=false show-R=false>
+  <variable params-name="u" digits={{params.d}}>u</variable>
+  <variable params-name="v" digits={{params.d}}>v</variable>
+  <variable params-name="a" digits=0>a</variable>
+  <variable params-name="b" digits=0>b</variable>
+</pl-variable-output>
+
+</pl-question-panel>
+
+
+<pl-matrix-input answers-name="w" label="${\bf w} = $" comparison="sigfig" digits={{params.d2}}></pl-matrix-input>
