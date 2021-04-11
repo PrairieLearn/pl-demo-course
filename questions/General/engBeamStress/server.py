@@ -65,6 +65,12 @@ def generate(data):
         sigma = M*(h[i]/2) / Ix[i]
         data["correct_answers"]["sigma"+str(i+1)] = sigma*100
 
+    # Create the link for the source code
+    import os
+    path_name = "https://github.com/PrairieLearn/pl-demo-course/tree/master/questions" + os.getcwd().split("questions",1)[1]
+    data["params"]["path_name"] =  path_name
+
+
 def make_pl_polygon_input(*arg):
     npoints = len(arg)
     input = "[ "
