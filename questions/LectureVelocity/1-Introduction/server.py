@@ -5,6 +5,8 @@ import io
 import matplotlib as ml
 ml.rcParams['text.usetex'] = True
 plt.rcParams.update({'font.size': 14})
+import os
+
 
 def f(x):
     return 0.5*x**2 - 2
@@ -24,6 +26,10 @@ def generate(data):
     data['correct_answers']['height'] = h
     data['correct_answers']['slope'] = (f(b) - f(a))/(b - a)
     data['correct_answers']['va'] = (f(b) - f(a))/(b - a)
+
+    # Create the link for the source code
+    cwd = os.getcwd()
+    data["params"]["path_name"] =  "https://github.com/PrairieLearn/pl-demo-course/tree/master/" + cwd[8:]
 
 ## The function 'file(data)' is used to generate the figure dynamically,
 ## given data defined in the 'generate' function
