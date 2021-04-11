@@ -1,0 +1,66 @@
+{
+    "uuid": "12D012E4-9C66-4092-BA1A-0445919CB0C3",
+    "type": "Exam",
+    "title": "Exam with instant feedback and additional attempts for partial credit",
+    "set": "Exam",
+    "number": "1",
+    "allowAccess": [
+        {
+            "role": "TA",
+            "credit": 100
+        },
+        {
+            "comment": "Set the start/end dates for the quiz period. By using the showClosedAssessment: false, students do not have access to the quiz questions after the time limit is reached",
+            "mode": "Public",
+            "credit": 100,
+            "startDate": "2021-01-01T00:00:01",
+            "endDate": "2021-12-31T23:59:59",
+            "timeLimitMin": 50,
+            "showClosedAssessment": false
+        }
+    ],
+    "zones": [
+        {
+            "title": "Math questions",
+            "questions": [
+                {"id": "Gallery/includeFigure/complex", "points": [3,1]},
+                {"id": "General/mathNumberInput","points": [3,1]},
+                {
+                    "comment": "Testing similar concepts in separate questions for easy access to statistics",
+                    "numberChoose": 1,
+                    "points": [3,1],
+                    "alternatives": [
+                        {"id": "General/mathNumbersConcept-odd"},
+                        {"id": "General/mathNumbersConcept-even"},
+                        {"id": "General/mathNumbersConcept-prime"}
+                    ]
+                },
+                {
+                    "comment": "Similar questions",
+                    "numberChoose": 1,
+                    "points": [4,2,1],
+                    "alternatives": [
+                        {"id": "General/mathOuterProduct"},
+                        {"id": "General/mathMatrixMult"},
+                        {"id": "General/mathMatrixMultT"}
+                    ]
+                },
+                {"id": "General/graphAdjacencyMatrix","points": [3,1]}
+            ]
+        },
+        {
+            "title": "Drawing questions",
+            "questions": [
+                {"id": "General/engCentroid", "points": [3,1]}
+            ]
+        },
+        {
+            "title": "Engineering questions",
+            "questions": [
+                {"id": "General/engBeamStress", "points": [5,4,3,2,1]},
+                {"id": "General/engLogic", "points": [3,1]}
+            ]
+        }
+    ],
+    "text": "<p> You can enter any general instructions for your quiz here.</p> <p>For this quiz you can use the <a target=\"_blank\" href=\"<%= clientFilesCourse %>/formulas.pdf\">formula sheet</a>.</p>"
+}

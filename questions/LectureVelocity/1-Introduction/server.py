@@ -17,13 +17,13 @@ def generate(data):
     data["params"]["a"] = a
     data["params"]["b"] = b
 
-    h = f(b) - f(a)
-    base = b - a
+    h = abs(f(b) - f(a))
+    base = abs(b - a)
 
     data['correct_answers']['base'] = base
     data['correct_answers']['height'] = h
-    data['correct_answers']['slope'] = h/base
-    data['correct_answers']['va'] = h/base
+    data['correct_answers']['slope'] = (f(b) - f(a))/(b - a)
+    data['correct_answers']['va'] = (f(b) - f(a))/(b - a)
 
 ## The function 'file(data)' is used to generate the figure dynamically,
 ## given data defined in the 'generate' function
