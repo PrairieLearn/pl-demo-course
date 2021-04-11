@@ -29,6 +29,7 @@ def generate(data):
 
     # Create the link for the source code
     cwd = os.getcwd()
+    print(cwd)
     data["params"]["path_name"] =  "https://github.com/PrairieLearn/pl-demo-course/tree/master/" + cwd[8:]
 
 ## The function 'file(data)' is used to generate the figure dynamically,
