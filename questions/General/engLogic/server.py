@@ -13,8 +13,3 @@ def generate(data):
     F = ((not y) and z) or x
 
     data["correct_answers"]["F"] = F
-
-    # Create the link for the source code
-    import os
-    path_name = "https://github.com/PrairieLearn/pl-demo-course/tree/master/questions" + os.getcwd().split("questions",1)[1]
-    data["params"]["path_name"] =  path_name

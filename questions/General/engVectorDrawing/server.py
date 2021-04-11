@@ -28,9 +28,3 @@ def generate(data):
     else:
         data["params"]["alpha"] = -alpha
         data["params"]["direction"] = "counter-clockwise"
-
-
-    # Create the link for the source code
-    import os
-    path_name = "https://github.com/PrairieLearn/pl-demo-course/tree/master/questions" + os.getcwd().split("questions",1)[1]
-    data["params"]["path_name"] =  path_name
