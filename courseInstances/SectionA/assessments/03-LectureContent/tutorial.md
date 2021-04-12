@@ -2,7 +2,7 @@
 
 ## Creating assessments with lecture content and short quizzes
 
-This assessment provides an example of how we can use PrairLearn to introduce course content, using a combination of text, figures, embedded videos, interactive JupyterLabs and short questions. 
+This assessment provides an example of how we can use PrairieLearn to introduce course content, using a combination of text, figures, embedded videos, interactive JupyterLabs and short questions. 
 
 ![](assessment-image.png)
 
@@ -59,7 +59,7 @@ The first two questions are worth 1 point each, and the third question is worth 
 ]
 ```
 
-Students are allowed to try solving these questions for an unlimited number of variants. In general, question variants may be presented using different input values, parameters and other settings. Using the configuration above, when solving the first and third questions, students will be able to submit attempts for the exact question up to 4 times. After that attempt, they will be able to generate another variant of the question. The image below shows the `Save & Grade` button for the questions 1 and 3 once a new variant is created.
+Students can attempt to solve these questions for an unlimited number of variants. In general, question variants may be presented using different input values, parameters and other settings. Using the configuration above, when solving the first and third questions, students will be able to submit attempts for the same question up to 4 times. After the last attempt, they will be able to generate another variant of the question. The image below shows the `Save & Grade` button for the questions 1 and 3 once a new variant is created.
 
 ![](4-attempts.png)
 
