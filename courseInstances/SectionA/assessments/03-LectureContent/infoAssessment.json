@@ -37,8 +37,9 @@
             "questions": [
                 { "id": "LectureVelocity/1-Introduction", "points": 1, "triesPerVariant": 4},
                 { "id": "LectureVelocity/2-Derivative", "points": 1},
-                { "id": "LectureVelocity/4-KnowledgeTest", "points": 1, "triesPerVariant": 4}
+                { "id": "LectureVelocity/4-KnowledgeTest", "points": 2, "triesPerVariant": 4}
             ]
         }
-    ]
+    ],
+    "text": "<p>Check this <a href=https://github.com/PrairieLearn/pl-demo-course/tree/master/courseInstances/SectionA/assessments/03-LectureContent target=_blank>tutorial</a> if you want to see more detailed explanation about this assessment.</p><p>The source code that creates this assessment is available on <a href=https://github.com/PrairieLearn/pl-demo-course/tree/master/courseInstances/SectionA/assessments/03-LectureContent target=_blank>Github</a>."
 }
