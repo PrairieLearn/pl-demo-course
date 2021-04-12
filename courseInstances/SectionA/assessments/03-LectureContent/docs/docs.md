@@ -9,7 +9,7 @@ This assessment provides an example of how we can use PrairieLearn to introduce 
 In this page, we will provide detailed information about the assessment file and each individual question:
 
 - [Assessment L1](#Assessment-L1)
-- [Question L1.1. Introduction](#Question-L1.1.-Introduction)
+- [Question L1.1. Introduction](#Question-1-Introduction)
 - [Question L1.2. Derivative definition](#Question-L1.2-Derivative-definition)
 - [Question L1.3. Check what you learned](#Question-L1.3.-Check-what-you-learned)
 
