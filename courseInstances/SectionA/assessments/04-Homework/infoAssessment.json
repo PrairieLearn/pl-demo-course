@@ -35,7 +35,7 @@
         {
             "title": "Math questions",
             "questions": [
-                {"id": "General/mathNumbersConcept-all", "points": 1,"maxPoints": 3},
+                {"id": "General/mathNumbersConcept-all", "points": 1,"maxPoints": 8},
                 {"id": "General/mathAreaUnderCurve", "points": 1,"maxPoints": 3},
                 {"id": "General/mathFunctionDerivative", "points": 1,"maxPoints": 2},
                 {"id": "General/mathMatrixVectMult", "points": 1,"maxPoints": 3},
@@ -62,5 +62,6 @@
                 {"id": "General/mathCodeNumpy", "points": 3, "maxPoints": 3}
             ]
         }
-    ]
+    ],
+    "text": "<p>Check this <a href=https://github.com/PrairieLearn/pl-demo-course/tree/master/courseInstances/SectionA/assessments/04-Homework/docs/docs.md target=_blank>documentation</a> if you want to see more detailed explanation about this assessment.</p><p>The source code that creates this assessment is available on <a href=https://github.com/PrairieLearn/pl-demo-course/tree/master/courseInstances/SectionA/assessments/04-Homework target=_blank>Github</a>."
 }
