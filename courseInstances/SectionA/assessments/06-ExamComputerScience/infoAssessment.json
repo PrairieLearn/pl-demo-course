@@ -1,9 +1,9 @@
 {
     "uuid": "13D012E4-9C77-4092-BA1A-0445919CB0C3",
     "type": "Exam",
-    "title": "Exam with only manually-graded questions",
+    "title": "Exam with Computer Science questions",
     "set": "Exam",
-    "number": "3",
+    "number": "4",
     "allowRealTimeGrading": false,
     "allowAccess": [
         {
@@ -43,7 +43,7 @@
                     "numberChoose": 1,
                     "points": 25,
                     "alternatives": [
-                        {"id": "General/mathNumbersConcept-odd"}
+                        {"id": "General/mathCodeNumpy"}
                     ]
                 }
             ]

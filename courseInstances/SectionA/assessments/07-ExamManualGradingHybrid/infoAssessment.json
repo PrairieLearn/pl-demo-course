@@ -3,7 +3,7 @@
     "type": "Exam",
     "title": "Exam with mixture of manually and auto-graded questions",
     "set": "Exam",
-    "number": "4",
+    "number": "3",
     "allowRealTimeGrading": false,
     "allowAccess": [
         {
@@ -32,15 +32,10 @@
     ],
     "zones": [
         {
-            "title": "Fundamental questions",
             "questions": [
-                {
-                    "numberChoose": 1,
-                    "points": 25,
-                    "alternatives": [
-                        {"id": "General/mathNumbersConcept-odd"}
-                    ]
-                }
+                {"id": "General/engCentroid", "points": 3},
+                {"id": "General/engBinary", "points": 1},
+                {"id": "General/mathMatrixVectMult", "points": 1}
             ]
         }
     ],

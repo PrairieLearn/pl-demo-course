@@ -22,15 +22,11 @@
     ],
     "zones": [
         {
-            "title": "Fundamental questions",
             "questions": [
-                {
-                    "numberChoose": 1,
-                    "points": 25,
-                    "alternatives": [
-                        {"id": "General/mathNumbersConcept-odd"}
-                    ]
-                }
+                {"id": "General/mathGraphs", "points": 2},
+                {"id": "General/mathAreaUnderCurve", "points": 2},
+                {"id": "General/mathMatrixConcept",  "points": 2},
+                {"id": "General/engLogic", "points": 3}
             ]
         }
     ],

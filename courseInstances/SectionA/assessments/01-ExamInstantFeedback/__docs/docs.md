@@ -1,17 +1,16 @@
 
 
-## Homework with unlimited attempts
+## Exam/Quiz with instant feedback and retry attempt for partial credit
 
-This assessment provides an example of how we can use PrairieLearn to deliver homework based on a mastery skill approach, where students need to correctly answer different question variants to achieve 100% score. 
+This assessment provides an example of how we can use PrairieLearn to deliver exams that are individualized for each student, auto-graded with instant feedback, and with opportunity for retry attempts for partial credit.
+
+This example uses `"type": "Exam"` in the assessment configuration file. The example source code is available on [Github](https://github.com/PrairieLearn/pl-demo-course/blob/master/courseInstances/SectionA/assessments/01-ExamInstantFeedback/infoAssessment.json).
 
 ![](assessment-page.png)
 
-This homework setup is achieved using `"type": "Homework"` in the assessment configuration file. The example source code is available on [Github](https://github.com/PrairieLearn/pl-demo-course/blob/master/courseInstances/SectionA/assessments/04-Homework/infoAssessment.json).
 
 
-### Submission and grading options
-
-#### 1) Unlimited variants with single attempts
+### 1) Unlimited variants with single attempts
 
 Using the default settings for `"type": "Homework"`, students 
 will be presented with an unlimited number of attempts for each question. where every new attempt corresponds to a different variant of the question (i.e., one single attempt per question variant). We will use Question 3 in this assessment to illustrate this setup. The question is added to the configuration file [(infoAssessment.json)](https://github.com/PrairieLearn/pl-demo-course/blob/master/courseInstances/SectionA/assessments/04-Homework/infoAssessment.json) using the following syntax:
@@ -67,34 +66,3 @@ Some of the PrairieLearn elements allows for partial credit. We will use Questio
 ![](question-partial-credit.png)
 
 In this example, for the first question variant all the checkboxes are marked correctly, and hence the awarded points is increased by the question value. For the following question variant, one of the correct checkboxes is left unmarked, and hence the score for that question is set to 0.8. Note that this submission attempt is still in-progress, and the next submission will try to improve that score, which will only be updated if greater than 0.8. This point system is designed to stop students from achieving full credit in a given question by just submitting many partially correct question variants.
-
-
-### Setting up the due dates
-
-In this example, the homework is set in three different stages: students can complete their homework by 1) the first deadline (Nov 15) to earn full credit; 2) the late deadline (Nov 30) for 50% credit and 3) they will be able to see and continue to work on the assessment by a third deadline, usually the end of the semester (Dec 31), without earning any additional credit.
-
-```json
-{
-    "comment": "Set end date for 100% credit",
-    "mode": "Public",
-    "credit": 100,
-    "startDate": "2021-01-01T00:00:01",
-    "endDate": "2021-11-15T23:59:59"
-},
-{
-    "comment": "Set later end date for reduced credit",
-    "mode": "Public",
-    "credit": 50,
-    "startDate": "2021-01-01T00:00:01",
-    "endDate": "2021-11-30T23:59:59"
-},
-{
-    "comment": "Set another end date, potentially end of the term, for zero credit (can practice, but no longer earn points for the assessement)",
-    "mode": "Public",
-    "credit": 0,
-    "startDate": "2021-01-01T00:00:01",
-    "endDate": "2021-12-31T23:59:59"
-}
-```
-
-You can check the [documentation](https://prairielearn.readthedocs.io/en/latest/accessControl/#credit) to learn more about how `credit` is used for score calculation.

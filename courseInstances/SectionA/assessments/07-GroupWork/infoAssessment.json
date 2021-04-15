@@ -1,8 +1,8 @@
 {
     "uuid": "2ac41a99-3e86-4c19-bb82-9e06e4b930bc",
     "type": "Homework",
-    "title": "Group Activity (can be done sync or async)",
-    "set": "Worksheet",
+    "title": "Learning with your peers",
+    "set": "GroupActivity",
     "number": "1",
     "groupWork": true,
     "groupMinSize": 1,

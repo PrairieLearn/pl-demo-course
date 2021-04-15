@@ -4,7 +4,7 @@
 
 This assessment provides an example of how we can use PrairieLearn to introduce course content, using a combination of text, figures, embedded videos, interactive JupyterLabs and short questions. 
 
-![](assessment-image.png)
+![](assessment-page.png)
 
 In this page, we will provide detailed information about the assessment file and each individual question:
 
@@ -65,13 +65,13 @@ Students can attempt to solve these questions for an unlimited number of variant
 
 After one incorrect attempt, they will have only one attempt left.
 
-![](3-attempts.png)
+![](last-attempt.png)
 
 Once students use all the attempts, they will be able to generate a new variant. They are also able to generate a new variant if they get the correct answer, and get more practice repeating the question for different parameters.
 
 ![](try-new.png)
 
-When solving the second question, students only have one try per variant (the default value), but then can still generate as many question variants as they want.
+When solving the second question, students only have one try per variant (the default value), but they can still generate as many question variants as they want.
 
 
 ### Question L1.1. Introduction

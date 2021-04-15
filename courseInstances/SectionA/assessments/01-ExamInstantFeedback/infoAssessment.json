@@ -21,9 +21,8 @@
     ],
     "zones": [
         {
-            "title": "Math questions",
+            "title": "Zone 1",
             "questions": [
-                {"id": "Gallery/includeFigure/complex", "points": [3,1]},
                 {"id": "General/mathNumberInput","points": [3,1]},
                 {
                     "comment": "Testing similar concepts in separate questions for easy access to statistics",
@@ -34,31 +33,24 @@
                         {"id": "General/mathNumbersConcept-even"},
                         {"id": "General/mathNumbersConcept-prime"}
                     ]
-                },
-                {
-                    "comment": "Similar questions",
-                    "numberChoose": 1,
-                    "points": [4,2,1],
-                    "alternatives": [
-                        {"id": "General/mathOuterProduct"},
-                        {"id": "General/mathMatrixMult"},
-                        {"id": "General/mathMatrixMultT"}
-                    ]
-                },
-                {"id": "General/graphAdjacencyMatrix","points": [3,1]}
+                }
             ]
         },
         {
-            "title": "Drawing questions",
+            "title": "Zone 2",
             "questions": [
-                {"id": "General/engCentroid", "points": [3,1]}
-            ]
-        },
-        {
-            "title": "Engineering questions",
-            "questions": [
-                {"id": "General/engCircuit", "points": [5,4,3,2,1]},
-                {"id": "General/engLogic", "points": [3,1]}
+              {
+                  "comment": "Similar questions",
+                  "numberChoose": 1,
+                  "points": [4,2,1],
+                  "alternatives": [
+                      {"id": "General/mathOuterProduct"},
+                      {"id": "General/mathMatrixMult"},
+                      {"id": "General/mathMatrixMultT"}
+                  ]
+              },
+              {"id": "General/graphAdjacencyMatrix","points": [3,1]},
+              {"id": "General/engCircuit", "points": [5,4,3,2,1]}
             ]
         }
     ],

@@ -3,7 +3,8 @@
     "name": "XC 100",
     "title": "Demo Course",
     "assessmentSets": [
-        {"abbreviation": "L", "name": "Lecture", "heading": "Lecture Resources", "color": "blue1"}
+        {"abbreviation": "L", "name": "Lecture", "heading": "Pre-Lecture Activities", "color": "blue1"},
+        {"abbreviation": "G", "name": "GroupActivity", "heading": "Group Activities", "color": "pink1"}
     ],
     "options": {
         "useNewQuestionRenderer": true
