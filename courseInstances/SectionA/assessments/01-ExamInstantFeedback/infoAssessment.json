@@ -54,5 +54,5 @@
             ]
         }
     ],
-    "text": "<p> You can enter any general instructions for your quiz here.</p> <p>For this quiz you can use the <a target=\"_blank\" href=\"<%= clientFilesCourse %>/formulas.pdf\">formula sheet</a>.</p>"
+    "text": "<p>Check this <a href=https://github.com/PrairieLearn/pl-demo-course/tree/master/courseInstances/SectionA/assessments/04-Homework/__docs/docs.md target=_blank>documentation</a> if you want to see more detailed explanation about this assessment.</p><p>The source code that creates this assessment is available on <a href=https://github.com/PrairieLearn/pl-demo-course/tree/master/courseInstances/SectionA/assessments/04-Homework target=_blank>Github</a>.<p> You can enter any general instructions for your exam here. For example, you can provide access to <a target=\"_blank\" href=\"<%= clientFilesCourse %>/formulas.pdf\">formula sheet</a>.</p>"
 }

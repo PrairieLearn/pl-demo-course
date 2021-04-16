@@ -2,67 +2,61 @@
 
 ## Exam/Quiz with instant feedback and retry attempt for partial credit
 
-This assessment provides an example of how we can use PrairieLearn to deliver exams that are individualized for each student, auto-graded with instant feedback, and with opportunity for retry attempts for partial credit.
+This assessment provides an example of how we can use PrairieLearn to deliver exams that are distinct for each student, auto-graded with instant feedback, and with opportunity for retry attempts for partial credit.
 
 This example uses `"type": "Exam"` in the assessment configuration file. The example source code is available on [Github](https://github.com/PrairieLearn/pl-demo-course/blob/master/courseInstances/SectionA/assessments/01-ExamInstantFeedback/infoAssessment.json).
 
+When using `"type": "Exam"`, one can define an assessment question by either a single `id` or by a list of alternatives. In the example below, the assessment `Question 1` is set by a single `"id": "General/mathNumberInput"`, while `Question 2` is randomly selected from a pool of three different questions. 
+
 ![](assessment-page.png)
 
+Each zone will appear in order in the assessment. The zone titles are optional and will be displayed to students when present. The questions are shuffled within each zone. You can find more information about question specification from the [documentation](https://prairielearn.readthedocs.io/en/latest/assessment/#question-specification).
+
+All question instances are generated only once when the exam instance is created for that student. This is different than `"type": "Homework"`
+where students are able to create new question instances for practice, or for additional points. This feature matches a traditional paper-and-pencil experience, where the student receives one exam with fixed parameters. By default, PrairieLearn will auto-grade each question in real-time, and provide student with the feedback about correctness. Depending on how instructors define the question points, students can try to fix incorrect answers, and submit other attempts for reduced credit. For this example, students that submit question 1 incorrectly in the first attempt are able to still get 1/3 points if they submit the second attempt correct. 
 
 
-### 1) Unlimited variants with single attempts
+### Question 1:
 
-Using the default settings for `"type": "Homework"`, students 
-will be presented with an unlimited number of attempts for each question. where every new attempt corresponds to a different variant of the question (i.e., one single attempt per question variant). We will use Question 3 in this assessment to illustrate this setup. The question is added to the configuration file [(infoAssessment.json)](https://github.com/PrairieLearn/pl-demo-course/blob/master/courseInstances/SectionA/assessments/04-Homework/infoAssessment.json) using the following syntax:
-
-```json
-{"id": "General/mathFunctionDerivative", "points": 1,"maxPoints": 3},
-```
-
-Before the first submission attempt, the question value is defined by `points`. Note from the initial configuration (Fig. A) that the question has `Value: 1` and `Awarded points: 0/3` where `3` is defined by `maxPoints`. The polynomial function provided to students is generated based on randomized coefficients. In this example, the first attempt was completed successfully (Fig. B), resulting in `Awarded points: 1/3`. For each correct attempt, the question value is updated using `Value = Value + points`, and hence now `Value: 2`.
-
-![](question-retry.png)
-
-Students can now generate another variant of the question using the `Try a new variant` button. Note from Fig. C that the new function has different coefficients. 
-A successful submission of this second attempt would yield in `Awarded points: 3/3` or 100% credit for that question, in this case showing the student achieved mastery of that concept. In our example, this second attempt was not correct, and hence the total awarded points was not updated. Note that students are not penalized for incorrect answers by losing awarded points. However, the question value gets reset to the original value defined by `points`. For the next attempt, now the question has `Value: 1`. 
-
-Fig. D shows the result from the 3rd attempt for a different question variant. Since the answer is correct, awarded points is updated to `2/3` and the next question attempt has `Value: 2`. Another correct attempt for a different question variant would give the student 100% for that question (3/3). Note that students could continue to generate other question variants for practice, since even incorrect attempts would not affect their earned awarded points. 
-
-### 2) Limiting the number of attempts per variant
-
-There may be some situations where we want students to have more than one attempt for the same question variant. We can use the attribute `triesPerVariant` to control that. We will use 
-Question 6 in this assessment to illustrate this setup. The question is added to the configuration file [(infoAssessment.json)](https://github.com/PrairieLearn/pl-demo-course/blob/master/courseInstances/SectionA/assessments/04-Homework/infoAssessment.json) using the following syntax:
+In this example assessment, question 1 is added to the configuration file [(infoAssessment.json)](https://github.com/PrairieLearn/pl-demo-course/blob/master/courseInstances/SectionA/assessments/01-ExamInstantFeedback/infoAssessment.json) using the following syntax:
 
 ```json
-{"id": "General/engVectorDrawing", "points": 2, "maxPoints": 6, "triesPerVariant": 2}
+{"id": "General/mathNumberInput","points": [3,1]}
 ```
-Note that in this question students can have two attempts for each variant. In the example below, the first attempt for the first question variant is incorrect. The next attempt will have the same question variant (the parameters of the question remain the same). The remaining setup continues the same, with the question value reset for each incorrect attempt.
+
+Note that `points` is now defined by the list `[3,1]`, indicating that students will receive 3 points if they answer the question correctly in the first attempt, and 1 point if they answer the question correctly in the second attempt.
+
+Although this question variant is generated from the same question `id` for all students, the high level of randomization of the question provides enough variation such that not all students are receiving the same problem. Note that all input parameters are generated at random, including the symbolic equation that needs to be evaluated.
+
+![](Question1.png)
+
+If a student submits the first attempt incorrect, they receive immediate feedback, have access to the history of past submissions, and can try to submit new attempts **for the same parameters** for reduced credit.
 
 
-![](question_triesPerVariant.png)
+![](Question1-submission.png)
 
-### 3) Single variant with unlimited attempts
 
-In other situations you may want students to receive a single question variant with unlimited attempts. This can be desirable when the question involves a lot of computation, or specialized coding. In this case, we can set the question to `"singleVariant": true`. We will use Question 8 in this assessment to illustrate this setup. The question is added to the configuration file [(infoAssessment.json)](https://github.com/PrairieLearn/pl-demo-course/blob/master/courseInstances/SectionA/assessments/04-Homework/infoAssessment.json) using the following syntax:
+### Question 2:
+
+In this example assessment, question 2 is added to the configuration file [(infoAssessment.json)](https://github.com/PrairieLearn/pl-demo-course/blob/master/courseInstances/SectionA/assessments/01-ExamInstantFeedback/infoAssessment.json) using the following syntax:
 
 ```json
-{"id": "General/engBeamStress", "points": 3}
+{
+    "numberChoose": 1,
+    "points": [3,1],
+    "alternatives": [
+        {"id": "General/mathNumbersConcept-odd"},
+        {"id": "General/mathNumbersConcept-even"},
+        {"id": "General/mathNumbersConcept-prime"}
+    ]
+}
 ```
 
-Note that we omit the attribute `maxPoints`, which sets the question to the default value where `maxPoints = points`. This setup is more appropriate for questions with a single variant, since additional correct attempts in the same question variant is not aiding the student's learning. 
+The question is selected from a list of three alternatives, which are questions without randomization covering similar content, the understanding of odd, even and prime numbers, as illustrated in the figure below. 
 
-![](question-singleVariant.png)
+![](Question2.png)
 
-The question is still implemented using randomization of several parameters as illustrated in the figure above, so that different students get different versions of the question. 
+One of the advantages of keeping similar question variants with separate question ids is the easy access to statistics. However, using randomization to create question variants inside the same question id can be very useful for bookkeeping. One could combine the three questions above as one, as illustrate in the figure below (this question was included in the homework assessment).
 
-### 4) Questions with partial credit
+![](Question2-rand.png)
 
-Some of the PrairieLearn elements allows for partial credit. We will use Question 1 in this assessment to illustrate how the point system described above works with partial credit questions. The question is added to the configuration file [(infoAssessment.json)](https://github.com/PrairieLearn/pl-demo-course/blob/master/courseInstances/SectionA/assessments/04-Homework/infoAssessment.json) using the following syntax:
-
-```json
-{"id": "General/mathNumbersConcept-all", "points": 1,"maxPoints": 3}
-```
-
-![](question-partial-credit.png)
-
-In this example, for the first question variant all the checkboxes are marked correctly, and hence the awarded points is increased by the question value. For the following question variant, one of the correct checkboxes is left unmarked, and hence the score for that question is set to 0.8. Note that this submission attempt is still in-progress, and the next submission will try to improve that score, which will only be updated if greater than 0.8. This point system is designed to stop students from achieving full credit in a given question by just submitting many partially correct question variants.
