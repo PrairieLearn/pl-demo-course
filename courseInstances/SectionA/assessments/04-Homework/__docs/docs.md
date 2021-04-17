@@ -29,6 +29,8 @@ Skill levels such as "Remembering", "Understanding" and "Applying" from the Bloo
 
 ### Limiting the number of attempts per variant
 
+ADD TEXT HERE
+
 <p style="text-align:center;">
  <img src="set-retry-per-variant.png" alt="single-attempt" width=800></img>
 </p>
@@ -40,7 +42,7 @@ Skill levels such as "Remembering", "Understanding" and "Applying" from the Bloo
 Here students are given 3 retry attempts for each question variant, and they need to successully complete at least 2 question variants in order to receive full credit. 
 
 
-### Single variant with unlimited attempts
+### Unlimited retry attempts for the same question variant
 
 In some situations you may want students to receive a single question variant with unlimited attempts. This can be desirable when the question involves a lot of computation, or specialized coding.
 
@@ -48,6 +50,6 @@ In some situations you may want students to receive a single question variant wi
  <img src="one-variant-unlimited-attempts.png" alt="single-attempt" width=800></img>
 </p>
 
-**Question 7** from [Homework 1](https://www.prairielearn.org/pl/course_instance/128605/assessment/2310476Select) students need to apply knowledge from a given topic to contruct the solution to a "real-world" problem. Students have unlimited attempts to submit the correct solution once to receive full credit.
+**Question 6** from [Homework 1](https://www.prairielearn.org/pl/course_instance/128605/assessment/2310476Select) asks students to apply knowledge from a given topic to contruct the solution of a "real-world" problem. Students have unlimited attempts to submit the correct solution once to receive full credit.
 
 
