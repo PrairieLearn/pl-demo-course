@@ -34,7 +34,6 @@
         {
             "questions": [
                 {"id": "General/engCentroid", "points": 3},
-                {"id": "General/engBinary", "points": 1},
                 {"id": "General/mathMatrixVectMult", "points": 1}
             ]
         }

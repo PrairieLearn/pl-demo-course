@@ -33,22 +33,24 @@
     ],
     "zones": [
         {
-            "title": "Math questions",
+            "title": "Unlimited question variants with one single attempt",
             "questions": [
-                {"id": "General/mathNumbersConcept-all", "points": 1,"maxPoints": 3},
-                {"id": "General/mathFunctionDerivative", "points": 1,"maxPoints": 3}
+                {"id": "General/mathNumbersConcept-all", "points": 1,"maxPoints": 6},
+                {"id": "General/engBinary", "points": 1, "maxPoints": 3},
+                {"id": "General/mathFunctionDerivative", "points": 1,"maxPoints": 6}
             ]
         },
         {
-            "title": "Drawing questions",
+            "title": "Unlimited question variants with prescribed number of attempts",
             "questions": [
-                {"id": "General/engVectorDrawing", "points": 2, "maxPoints": 6, "triesPerVariant": 2}
+                {"id": "General/engVectorDrawing", "points": 2, "maxPoints": 6, "triesPerVariant": 2},
+                {"id": "General/engBeamStress", "points": 2, "maxPoints": 6, "triesPerVariant": 3}
             ]
         },
         {
-            "title": "Engineering questions",
+            "title": "Single question variant with unlimited number of attempts",
             "questions": [
-                {"id": "General/engBeamStress", "points": 3}
+                {"id": "General/engMarkovBrewing", "points": 8}
             ]
         }
     ],
