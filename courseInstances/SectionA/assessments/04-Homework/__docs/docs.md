@@ -9,7 +9,7 @@ In the following text, we will illustrate how PrairieLearn can be used to create
 PrairieLearn supports the development of **question generators**, defined by a set of html and python code that generate different **question variants** based on randomized parameters. A homework is defined by a collection of question generators.
 
 
-### Drilling basic skills with unlimited variants
+### Drilling basic skills using unlimited variants with single attempt
 
 In this configuration, the question generator creates unlimited question variants, each one with a single attempt. Once students submit an answer to a question, they receive immediate feedback, indicating if the question was correct, partially correct, or incorrect. The feedback may also include more detailed explanation. No matter if a submission is correct or not, students have the ability to generate another question variant with a single attempt. Moreover, students are not penalized when submitting an incorrect attempt.
 

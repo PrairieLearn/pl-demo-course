@@ -33,7 +33,7 @@
     ],
     "zones": [
         {
-            "title": "Unlimited question variants with one single attempt",
+            "title": "Zone 1: Unlimited question variants with one single attempt",
             "questions": [
                 {"id": "General/mathNumbersConcept-all", "points": 1,"maxPoints": 6},
                 {"id": "General/engBinary", "points": 1, "maxPoints": 3},
@@ -41,18 +41,18 @@
             ]
         },
         {
-            "title": "Unlimited question variants with prescribed number of attempts",
+            "title": "Zone 2: Unlimited question variants with prescribed number of attempts",
             "questions": [
                 {"id": "General/engVectorDrawing", "points": 2, "maxPoints": 6, "triesPerVariant": 2},
                 {"id": "General/engBeamStress", "points": 2, "maxPoints": 6, "triesPerVariant": 3}
             ]
         },
         {
-            "title": "Single question variant with unlimited number of attempts",
+            "title": "Zone 3: Single question variant with unlimited number of attempts",
             "questions": [
                 {"id": "General/engMarkovBrewing", "points": 8}
             ]
         }
     ],
-    "text": "<p>Check this <a href=https://github.com/PrairieLearn/pl-demo-course/tree/master/courseInstances/SectionA/assessments/04-Homework/__docs/docs.md target=_blank>documentation</a> if you want to see more detailed explanation about this assessment.</p><p>The source code that creates this assessment is available on <a href=https://github.com/PrairieLearn/pl-demo-course/tree/master/courseInstances/SectionA/assessments/04-Homework target=_blank>Github</a>."
+    "text": "<p><strong>Comments about this assessment:</strong> </p><p><strong>Zone 1</strong> includes examples of lower level questions that involve nearly automatic responses. As such, we use the drilling for mastery configuration (PrairieLearn default for homework), where students can create unlimited question variants, each one with a single attempt. Read more <a href=https://github.com/PrairieLearn/pl-demo-course/blob/master/courseInstances/SectionA/assessments/04-Homework/__docs/docs.md/#Drilling-basic-skills-using-unlimited-variants-with single-attempt target=_blank>here</a>.</p> <p><strong>Zone 2</strong> includes examples of more sophisticated questions that often involve more than one step to achieve the solution. These questions allow students to retry the same question variant more than once, before creating a new variant. Read more <a href=https://github.com/PrairieLearn/pl-demo-course/blob/master/courseInstances/SectionA/assessments/04-Homework/__docs/docs.md/#Limiting-the-number-of-attempts-per-variant target=_blank>here</a>.</p><p><strong>Zone 3</strong> includes a coding question that involve multiple skills levels (lower to high) and several steps to obtain the solution. Students receive only one variant of the question and have unlimited attempts to complete it successfuly. Read more <a href=https://github.com/PrairieLearn/pl-demo-course/blob/master/courseInstances/SectionA/assessments/04-Homework/__docs/docs.md/#Unlimited-retry-attempts-for-the-same-question-variant target=_blank>here</a>.</p><p>The source code that creates this assessment is available on <a href=https://github.com/PrairieLearn/pl-demo-course/tree/master/courseInstances/SectionA/assessments/04-Homework target=_blank>Github</a>."
 }
