@@ -21,15 +21,18 @@ The simple creation of students' teams will rarely guarantee that students will 
 
 #### 1) Task design
 
-Assessments that are based on higher level skills such as *Analyze*, *Evaluate* and *Create*  from the [Bloom's Taxonomy](https://en.wikipedia.org/wiki/Bloom's_taxonomy) produce more opportunities for students' interactions, where they can learn from each other. Low level skills which require students to remember simple concepts, or apply simple calculations will emphasize the existence of domineers and free loaders. When designing group tasks, we focus on questions that produce discussions and decision-making.
+Assessments that are based on higher level skills such as *Analyze*, *Evaluate* and *Create*  from the [Bloom's Taxonomy](https://en.wikipedia.org/wiki/Bloom's_taxonomy) produce more opportunities for students' interactions, where they can learn from each other. Low level skills which require students to remember simple concepts, or apply simple calculations will emphasize the existence of domineering leaders and free loaders. When designing group tasks, we focus on questions that produce discussions and decision-making.
 
-Another strategy to enhance collaborative learning is to provide activities that can be self-managed by the team, such that instructors act only as facilitators instead of source of information. In the course demo, we provide an example that uses JupyterLab notebooks for the group assessment. These notebooks can include text, images, and equations for content presentation, and also ask students to perform computations (in this example, using a Python 3 Kernel). 
+Another strategy to enhance collaborative learning is to provide activities that can be self-managed by the team, such that instructors act only as facilitators instead of source of information. In the course demo, we provide an example that uses JupyterLab notebooks for the [group assessment](https://www.prairielearn.org/pl/course_instance/128605/assessment/2310480). These notebooks can include text, images, and equations for content presentation, and also ask students to perform computations (in this example, using a Python 3 Kernel). 
 
-Instructors can define `#grade` cells, which are auto-graded for instant feedback. 
+We can use PrairieLearn external grader to check content for correctness. This will help students self-manage their progress. Instructors can define `#grade` cells inside the JupyterLab notebook, which will be auto-graded for instant feedback (see image below).
 
 ![](group-page1.png)
 
-Students in the same group will share the same JupyterLab, and the same submission history and scores. Currently the JupyterLab syncs when the document is saved (real-time synchronization is a work-in-progress).
+Students in the same group will share the same JupyterLab, and the same submission history and scores. Currently the JupyterLab syncs upon saving (real-time synchronization is a work-in-progress).
 
+#### 2) Assignment of team roles
 
-A lack of clarity and experience in assuming team roles can lead students to default into domineering team leaders or passive free-loaders \cite{lipponen2004practices}.  Evidence-based practices such as pair programming \cite{hanks2011pair}, role scripting \cite{weinberger2009computer,schellens2007scripting} and Process Oriented Guided Inquiry Learning (POGIL) \cite{POGIL, moog2008process} have shown that providing students with structured roles can help them participate more equitably during collaborative learning. Indeed, these practices give students the critical social support that helps them persist through learning challenges. 
+A lack of clarity and experience in assuming team roles can lead students to default into domineering team leaders or passive free-loaders.  Evidence-based practices such as Process Oriented Guided Inquiry Learning [(POGIL)](https://pogil.org)  have shown that providing students with structured roles can help them participate more equitably during collaborative learning. Indeed, these practices give students the critical social support that helps them persist through learning challenges. 
+
+During POGIL activities, structured roles include the Recorder who is assigned to write the team's answers to problems, the Manager who is responsible for keeping the team on task, and the Reflector who observes the team dynamics and behavior with respect to the learning process. The [group assessment](https://www.prairielearn.org/pl/course_instance/128605/assessment/2310480) included in the demo course encourages students to assign the roles of Recorder, Manager and Reflector.
