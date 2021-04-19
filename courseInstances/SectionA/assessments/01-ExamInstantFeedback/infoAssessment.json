@@ -1,0 +1,48 @@
+{
+    "uuid": "12D012E4-9C66-4092-BA1A-0445919CB0C3",
+    "type": "Exam",
+    "title": "Exam with instant feedback and additional attempts for partial credit",
+    "set": "Exam",
+    "number": "1",
+    "allowAccess": [
+        {
+            "role": "TA",
+            "credit": 100
+        },
+        {
+            "comment": "Set the start/end dates for the quiz period. By using the showClosedAssessment: false, students do not have access to the quiz questions after the time limit is reached",
+            "mode": "Public",
+            "credit": 100,
+            "startDate": "2021-01-01T00:00:01",
+            "endDate": "2021-12-31T23:59:59",
+            "timeLimitMin": 50,
+            "showClosedAssessment": false
+        }
+    ],
+    "zones": [
+        {
+            "title": "Zone 1",
+            "questions": [
+                {"id": "General/mathNumberInput","points": [3,1]},
+            ]
+        },
+        {
+            "title": "Zone 2",
+            "questions": [
+              {
+                  "comment": "Similar questions",
+                  "numberChoose": 1,
+                  "points": [4,2,1],
+                  "alternatives": [
+                      {"id": "General/mathOuterProduct"},
+                      {"id": "General/mathMatrixMult"},
+                      {"id": "General/mathMatrixMultT"}
+                  ]
+              },
+              {"id": "General/graphAdjacencyMatrix","points": [3,1]},
+              {"id": "General/engCircuit", "points": [5,4,3,2,1]}
+            ]
+        }
+    ],
+    "text": "<p>Check this <a href=https://github.com/PrairieLearn/pl-demo-course/tree/master/courseInstances/SectionA/assessments/04-Homework/__docs/docs.md target=_blank>documentation</a> if you want to see more detailed explanation about this assessment.</p><p>The source code that creates this assessment is available on <a href=https://github.com/PrairieLearn/pl-demo-course/tree/master/courseInstances/SectionA/assessments/04-Homework target=_blank>Github</a>.<p> You can enter any general instructions for your exam here. For example, you can provide access to <a target=\"_blank\" href=\"<%= clientFilesCourse %>/formulas.pdf\">formula sheet</a>.</p>"
+}
