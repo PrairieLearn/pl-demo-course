@@ -9,7 +9,7 @@ In the following text, we will illustrate how PrairieLearn can be used to create
 PrairieLearn supports the development of **question generators**, defined by a set of html and python code that generate different **question variants** based on randomized parameters. A homework is defined by a collection of question generators.
 
 
-### Drilling basic skills using unlimited variants with single attempt
+### Drilling for mastery: unlimited variants with single attempt
 
 In this configuration, the question generator creates unlimited question variants, each one with a single attempt. Once students submit an answer to a question, they receive immediate feedback, indicating if the question was correct, partially correct, or incorrect. The feedback may also include more detailed explanation. No matter if a submission is correct or not, students have the ability to generate another question variant with a single attempt. Moreover, students are not penalized when submitting an incorrect attempt.
 
@@ -28,7 +28,7 @@ The [demo homework assessment](https://www.prairielearn.org/pl/course_instance/1
 
 **Question 3**  asks students to apply knowledge of derivatives to compute first order derivatives of polynomial equations. They need to successully complete at least 3 question variants in order to receive full credit. 
 
-### Limiting the number of attempts per variant
+### Repeated variant: unlimited variants with prescribed number of retry attempts
 
 More sophisticated skill levels can require multiple steps during the solution process, or combine knowledge of different topics. When creating more complex questions, instructors may want to provide students with additional attempts per question variant. This avoids unnecessary frustration of starting fresh on a new question variant when a small mistake is made during the solution process. Using this configuration, students can create a new question variant if they answer the question correctly or if they use all the retry attempts.
 
@@ -43,7 +43,7 @@ Similarly to the above configuration, instructors can define the number of times
 **Question 5** asks students to compute a quantity (stress) based on information obtained from a table that is randomized for each question variant. The computation of the stress involves several steps: finding the correct information from the table, identifying the correct equation and performing mathematical operations using the appropriate units. Since students can make small mistakes during the solution process, but still have the overall correct understanding of the problem, we provide 3 retry attempts for each question variant. Students need to successully complete at least 2 question variants in order to receive full credit. 
 
 
-### Unlimited retry attempts for the same question variant
+### Fixed variant: unlimited retry attempts for a single question variant
 
 There are some situations where we want students to receive a single question variant
 and have unlimited attempts to complete the question successfully. This is desirable when the question involves a lot of computation, or includes specialized coding.

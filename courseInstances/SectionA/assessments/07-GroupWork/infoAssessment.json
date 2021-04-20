@@ -4,6 +4,7 @@
     "title": "Learning with your peers",
     "set": "GroupActivity",
     "number": "1",
+    "comment": "this is a group activity, with minimum size of 1 and maximum size of 5, where students can self-assign to groups.",
     "groupWork": true,
     "groupMinSize": 1,
     "groupMaxSize": 5,
@@ -12,38 +13,11 @@
     "studentGroupLeave": true,
     "allowAccess": [
         {
-            "role": "TA",
+            "mode": "Public",
             "credit": 100
-        },
-        {
-            "mode": "Public",
-            "credit": 100,
-            "startDate": "2019-01-18T00:00:01",
-            "endDate": "2019-01-28T23:59:59"
-        },
-        {
-            "mode": "Public",
-            "credit": 50,
-            "startDate": "2019-01-28T00:00:01",
-            "endDate": "2019-01-30T23:59:59"
-        },
-        {
-            "mode": "Public",
-            "credit": 100,
-            "startDate": "2019-01-30T00:00:01"
         }
     ],
     "zones": [
-      {
-        "title": " Role assignments (Manager survey)",
-        "questions": [
-            {
-                "id": "General/GA-manager-survey",
-                "points": 1,
-                "maxPoints": 1
-            }
-        ]
-      },
       {
         "title": " How Markov chains work?",
         "questions": [
@@ -51,16 +25,7 @@
             {"id": "MarkovChainGroupActivity/MarkovChains-Gambler","points": 1},
             {"id": "MarkovChainGroupActivity/MarkovChains-PageRank","points": 1}
         ]
-      },
-      {
-        "title": "Debrief (Reflector survey)",
-        "questions": [
-            {
-                "id": "General/GA-reflector-survey",
-                "points": 1, "maxPoints": 1
-            }
-          ]
       }
     ],
-    "text": "<p><strong>Comments about this assessment:</strong> </p> <p> This is a group assignment to be completed by students in a synchronous format, using strategies that promote collaborative learning. You can find more information about these group activities <a href=https://github.com/PrairieLearn/pl-demo-course/blob/master/courseInstances/SectionA/assessments/07-GroupWork/__docs/docs.md target=_blank>here</a>.<p><strong>Note to students:</strong></p> <p>You are strongly encouraged to work with your team all at the same time. To help teams work together better, we recommend assigning team roles for all members. There are three team roles: manager, recorder, and reflector. You are expected to participate in each of these roles at least once this semester, and teams are encouraged to rotate these roles each week.</p><ul><li>Manager: Responsible for coordinating efforts of the team and making sure that all team members are contributing. For example, if a team member is silent for a while, it is the manager’s role to check in on the team member. The manager needs to make sure members of the team are working together to construct their answers. This is NOT a divide-and-conquer activity! The manager is responsible for completing the survey regarding the role assignments for that week.</li><li>Recorder: Responsible for being the main “driver,” entering most of the answers in PrairieLearn. However, other members of the team can also contribute by completing some of the notebook cells. The recorder is also expected to share their screen during the zoom meeting. This will help facilitating the discussions, and also provide a venue for staff members (that will be rotating between rooms) to interact with the teams.</li><li>Reflector: Responsible for making sure that all team members understand what’s going on. For example, the reflector might ask whether each team member understands the problem before moving on to the next problem. The reflector is responsible for completing a short survey at the end of each group assessment, including questions about team participation and the content of the activity.</li></ul></p>"
-  }
+    "text": "<p><strong>Comments about this assessment:</strong> </p><p> This is a group assignment where students will share the same questions and grades. In this configuration, students can create their own groups, with minimum size of 1 and maximum size of 5 (we set minimum of 1 so that anyone can try this assessment on their own, since the assessment can be not started unless the minimum size is reached). PrairieLearn also provides an option were instructors pre-assign students to teams. Read more <a href=https://github.com/PrairieLearn/pl-demo-course/blob/master/courseInstances/SectionA/assessments/07-GroupWork/__docs/docs.md>here</a>. <p>The source code that creates this assessment is available on <a href=https://github.com/PrairieLearn/pl-demo-course/blob/master/courseInstances/SectionA/assessments/07-GroupWork/infoAssessment.json target=_blank>Github</a>.</p>"
+}

@@ -1,14 +1,5 @@
 <pl-question-panel>
 
-  <div class="alert alert-warning" role="alert">
-    The <strong>RECORDER</strong> of this team is the person responsible for completing the notebook for today's activity.
-    However, other members of the team can also contribute by completing some of the notebook cells.
-  </div>
-
-  <div class="alert alert-warning" role="alert">
-    The <strong>MANAGER</strong> of this team should coordinate efforts when other members (that are not the Recorder) want
-    to make contribution to the notebook. This will ensure that students are not over-writing each other's code.
-  </div>
 
   <div class="card my-2">
     <div class="card-body">
@@ -19,9 +10,7 @@
       </p>
       <p>The cells that will be graded are marked with the tag <code>#grade</code>. Do not delete
         that line and/or cell, or the autograder will not be able to find your solution.
-      <p>
-
-      <p> Once you complete each one of the <code>#grade</code> cells, you can click
+        Once you complete each one of the <code>#grade</code> cells, you can click
         "Save & Grade" to see if you got the correct solution. </p>
 
     </div>
@@ -29,13 +18,6 @@
   <p>To get points for this question, you will need to define the following variables inside the notebook:</p>
   <pl-external-grader-variables params-name="names_from_user"></pl-external-grader-variables>
 
-  <p> We encourage you to click "Save & Grade" to check one variable at a time. </p>
-
-  <div class="alert alert-danger" role="alert">
-    ONLY THE RECORDER SHOULD CLICK "Save & Grade"!
-  </div>
-
-<pl-github-link></pl-github-link>
 
 </pl-question-panel>
 
@@ -43,3 +25,15 @@
   <pl-external-grader-results></pl-external-grader-results>
   <pl-file-preview></pl-file-preview>
 </pl-submission-panel>
+
+
+
+<pl-question-panel>
+  <!-- This is not part of the question, and is included for documentation purposes-->
+  <p></p>
+  <div class="alert alert-info p-2" role="alert">
+      <small>Note: this is an example of a question including JupyterLab for a collaborative learning activity.
+        Read more <a href="https://github.com/PrairieLearn/pl-demo-course/blob/master/courseInstances/SectionA/assessments/07-GroupWork/__docs/docs.md" target="_blank">here</a>.</small>
+        <pl-github-link></pl-github-link>
+  </div>
+</pl-question-panel>

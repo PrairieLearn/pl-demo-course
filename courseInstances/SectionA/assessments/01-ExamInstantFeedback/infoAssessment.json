@@ -24,6 +24,16 @@
             "title": "Zone 1",
             "questions": [
                 {"id": "General/mathNumberInput","points": [3,1]},
+                {
+                    "comment": "Testing similar concepts in separate questions for easy access to statistics",
+                    "numberChoose": 1,
+                    "points": [3,1],
+                    "alternatives": [
+                        {"id": "General/mathNumbersConcept-odd"},
+                        {"id": "General/mathNumbersConcept-even"},
+                        {"id": "General/mathNumbersConcept-prime"}
+                    ]
+                }
             ]
         },
         {
