@@ -1,7 +1,7 @@
 {
     "uuid": "12D012E4-9C66-4092-BA1A-0445919CB0C3",
     "type": "Exam",
-    "title": "Exam with instant feedback and additional attempts for partial credit",
+    "title": "Auto-graded randomized exams",
     "set": "Exam",
     "number": "1",
     "allowAccess": [
@@ -21,23 +21,21 @@
     ],
     "zones": [
         {
-            "title": "Zone 1",
             "questions": [
-                {"id": "General/mathNumberInput","points": [3,1]},
-                {
-                    "comment": "Testing similar concepts in separate questions for easy access to statistics",
-                    "numberChoose": 1,
-                    "points": [3,1],
-                    "alternatives": [
-                        {"id": "General/mathNumbersConcept-odd"},
-                        {"id": "General/mathNumbersConcept-even"},
-                        {"id": "General/mathNumbersConcept-prime"}
-                    ]
-                }
+                {"id": "General/mathNumberInput","points": [3,1]}
             ]
         },
         {
-            "title": "Zone 2",
+            "questions": [
+              {"id": "General/graphAdjacencyMatrix","points": [3,1]}
+            ]
+        },
+        {
+            "questions": [
+              {"id": "General/engCircuit", "points": [5,4,3,2,1]}
+            ]
+        },
+        {
             "questions": [
               {
                   "comment": "Similar questions",
@@ -48,11 +46,9 @@
                       {"id": "General/mathMatrixMult"},
                       {"id": "General/mathMatrixMultT"}
                   ]
-              },
-              {"id": "General/graphAdjacencyMatrix","points": [3,1]},
-              {"id": "General/engCircuit", "points": [5,4,3,2,1]}
+              }
             ]
         }
     ],
-    "text": "<p>Check this <a href=https://github.com/PrairieLearn/pl-demo-course/tree/master/courseInstances/SectionA/assessments/04-Homework/__docs/docs.md target=_blank>documentation</a> if you want to see more detailed explanation about this assessment.</p><p>The source code that creates this assessment is available on <a href=https://github.com/PrairieLearn/pl-demo-course/tree/master/courseInstances/SectionA/assessments/04-Homework target=_blank>Github</a>.<p> You can enter any general instructions for your exam here. For example, you can provide access to <a target=\"_blank\" href=\"<%= clientFilesCourse %>/formulas.pdf\">formula sheet</a>.</p>"
+    "text": "<p><strong>Comments about this assessment:</strong> </p><p> This is an example of an auto-graded exam with instant feedback, where students will receive a single (fixed) variant for each question, and can have a pre-defined number of retry attempts, depending on the difficulty level and question type. Read more <a href=https://github.com/PrairieLearn/pl-demo-course/blob/master/courseInstances/SectionA/assessments/01-ExamInstantFeedback/__docs/docs.md target=_blank>here</a>.</p><p>The source code that creates this assessment is available on <a href=https://github.com/PrairieLearn/pl-demo-course/tree/master/courseInstances/SectionA/assessments/01-ExamInstantFeedback/infoAssessment.json target=_blank>Github</a>.<p> You can enter any general instructions for your exam here. For example, you can provide access to <a target=\"_blank\" href=\"<%= clientFilesCourse %>/formulas.pdf\">formula sheet</a>.</p>"
 }

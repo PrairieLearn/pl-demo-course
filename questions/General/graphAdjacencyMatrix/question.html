@@ -1,12 +1,19 @@
 <pl-question-panel>
     <p>What is the adjacency matrix ${\bf A}$ corresponding to the graph below?</p>
     <pl-graph params-name-matrix="mat"></pl-graph>
+<p> Hint: zero entries can be left blank. </p>
 </pl-question-panel>
 
 
-<pl-matrix-component-input label="$\mathbf{A} = $" answers-name="mat" allow-blank="true"></pl-matrix-component-input>
+<pl-matrix-component-input label="$\mathbf{A} = $" answers-name="mat" allow-blank="true" allow-partial-credit="true"></pl-matrix-component-input>
 
 <pl-question-panel>
-<p> Hint: zero entries can be left blank. </p>
-<pl-github-link></pl-github-link>
+  <!-- This is not part of the question, and is included for documentation purposes-->
+  <p></p>
+  <div class="alert alert-info p-2" role="alert">
+    <small>Note: this is an example of a question generator with randomized parameters, which is used to
+       generate a fixed question variant for an exam. Students receive instant feedback and have retry attempts for partial credit.
+      Read more <a href="https://github.com/PrairieLearn/pl-demo-course/blob/master/courseInstances/SectionA/assessments/04-Homework/__docs/docs.md" target="_blank">here</a>.</small>
+      <pl-github-link></pl-github-link>
+  </div>
 </pl-question-panel>
