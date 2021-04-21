@@ -5,7 +5,7 @@
 Studies have shown that learning and retention of knowledge is enhanced through retrieval practice that incorporates feedback and increased use of formative assessments. 
 Here we describe how we use PrairieLearn to create quizzes where students get immediate feedback,  shortening the feedback cycle between student learning and assessment performance. This shorter cycle enables the use of frequent and second-chance testing, especially in large courses, which has been shown to lead to significant improvements in learning outcomes and better final exam performance. 
 
-We will use the assessment [E1: Auto-graded randomized exams](https://www.prairielearn.org/pl/course_instance/128605/assessment/2310473) to highlight some of the PrairieLearn features to deliver auto-graded and randomized exams. 
+We will use the assessment [E1: Auto-graded randomized exams](https://www.prairielearn.org/pl/course_instance/128605/assessment/2310709) to highlight some of the PrairieLearn features to deliver auto-graded and randomized exams. 
 
 
 ### Instant feedback with retry attempts
