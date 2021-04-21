@@ -1,11 +1,8 @@
 {
     "uuid": "32cd2db3-f80d-4320-bb25-2828cf569c91",
-    "title": "Element pl-order-blocks: Externally graded python code with randomized parameters",
+    "title": "Drag blocks to write a python function",
     "topic": "Autograder",
-    "tags": [
-        "code",
-        "v3"
-    ],
+    "tags": ["mfsilva@illinois.edu"],
     "type": "v3",
     "singleVariant": true,
     "gradingMethod": "External",
