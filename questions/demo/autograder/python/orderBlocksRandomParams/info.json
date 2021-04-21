@@ -4,7 +4,6 @@
     "topic": "Autograder",
     "tags": ["mfsilva@illinois.edu"],
     "type": "v3",
-    "singleVariant": true,
     "gradingMethod": "External",
     "externalGradingOptions": {
         "enabled": true,
