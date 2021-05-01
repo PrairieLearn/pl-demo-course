@@ -1,8 +1,11 @@
-
+---
+title: Homework
+summary: Mastery-based homework assessments
+---
 
 ## Mastery-based homework assessments
 
-Educational research and learning theory show that small numbers of single-practice problems may not be the most effective learning strategy for students. Mastery learning theory shows that different students require different amounts of practice to achieve proficiency in a given skill, and that all students require repeated practice. In addition, different learning skills require different learning approaches. 
+Educational research and learning theory show that small numbers of single-practice problems may not be the most effective learning strategy for students. Mastery learning theory shows that different students require different amounts of practice to achieve proficiency in a given skill, and that all students require repeated practice. In addition, different learning skills require different learning approaches.
 
 In the following text, we will illustrate how PrairieLearn can be used to create different learning experiences for students, and how they can be adjusted based on individual learning goals. We often use these homework as formative assessments, where students receive immediate feedback and have the opportunity to use the feedback to enhance their learning.
 
@@ -22,11 +25,11 @@ Instructors can define the number of times a student needs to correctly answer a
 Question generators based on skill levels such as *Remember*, *Understand* and *Apply* from the [Bloom's Taxonomy](https://en.wikipedia.org/wiki/Bloom's_taxonomy) often involve a solution process  that requires information retrival to answer conceptual questions or computation of simple expressions. These skills are the most appropriate for questions using the unlimited variants with single retry option.
 The [demo homework assessment](https://www.prairielearn.org/pl/course_instance/128605/assessment/2310476) includes some examples using this configuration:
 
-**Question 1** asks students to demonstrate basic thinking and remembering skills, by selecting the numbers that are prime (or odd, or even, etc). Students need to successully complete at least 3 question variants in order to receive full credit. 
+**Question 1** asks students to demonstrate basic thinking and remembering skills, by selecting the numbers that are prime (or odd, or even, etc). Students need to successully complete at least 3 question variants in order to receive full credit.
 
-**Question 2**  asks students to demonstrate their understanding of binary and decimal numbers, by converting a decimal number to its binary representation. Students need to successully complete at least 2 question variants in order to receive full credit. 
+**Question 2**  asks students to demonstrate their understanding of binary and decimal numbers, by converting a decimal number to its binary representation. Students need to successully complete at least 2 question variants in order to receive full credit.
 
-**Question 3**  asks students to apply knowledge of derivatives to compute first order derivatives of polynomial equations. They need to successully complete at least 3 question variants in order to receive full credit. 
+**Question 3**  asks students to apply knowledge of derivatives to compute first order derivatives of polynomial equations. They need to successully complete at least 3 question variants in order to receive full credit.
 
 ### Repeated variant: unlimited variants with prescribed number of retry attempts
 
@@ -38,9 +41,9 @@ More sophisticated skill levels can require multiple steps during the solution p
 
 Similarly to the above configuration, instructors can define the number of times a student needs to correctly answer a question variant to earn full credit. The [demo homework assessment](https://www.prairielearn.org/pl/course_instance/128605/assessment/2310476) includes some examples using this configuration:
 
-**Question 4** asks students to illustrate a vector with given position and orientation. Each question variant has two attempts, allowing students to retry the same question before generaring a new variant. In this example, students may have the correct understanding of the question, but potentially count the position incorrectly, or miss the correct orientation (clockwise or counter-clockwise). The second attempt gives students the opportunity to adjust their thinking, without having to start from the beginning. They need to successully complete at least 2 question variants in order to receive full credit. 
+**Question 4** asks students to illustrate a vector with given position and orientation. Each question variant has two attempts, allowing students to retry the same question before generaring a new variant. In this example, students may have the correct understanding of the question, but potentially count the position incorrectly, or miss the correct orientation (clockwise or counter-clockwise). The second attempt gives students the opportunity to adjust their thinking, without having to start from the beginning. They need to successully complete at least 2 question variants in order to receive full credit.
 
-**Question 5** asks students to compute a quantity (stress) based on information obtained from a table that is randomized for each question variant. The computation of the stress involves several steps: finding the correct information from the table, identifying the correct equation and performing mathematical operations using the appropriate units. Since students can make small mistakes during the solution process, but still have the overall correct understanding of the problem, we provide 3 retry attempts for each question variant. Students need to successully complete at least 2 question variants in order to receive full credit. 
+**Question 5** asks students to compute a quantity (stress) based on information obtained from a table that is randomized for each question variant. The computation of the stress involves several steps: finding the correct information from the table, identifying the correct equation and performing mathematical operations using the appropriate units. Since students can make small mistakes during the solution process, but still have the overall correct understanding of the problem, we provide 3 retry attempts for each question variant. Students need to successully complete at least 2 question variants in order to receive full credit.
 
 
 ### Fixed variant: unlimited retry attempts for a single question variant
@@ -53,5 +56,3 @@ and have unlimited attempts to complete the question successfully. This is desir
 </p>
 
 **Question 6** from [demo homework assessment](https://www.prairielearn.org/pl/course_instance/128605/assessment/2310476) asks students to apply knowledge from a given topic to contruct the solution of a "real-world" problem. Students have unlimited attempts to submit the correct solution for full credit.
-
-

@@ -1,11 +1,14 @@
-
+---
+title: Exam
+summary: Summative assessments that are auto-graded with instant feedback and retry opportunities
+---
 
 ## Auto-graded randomized exams
 
-Studies have shown that learning and retention of knowledge is enhanced through retrieval practice that incorporates feedback and increased use of formative assessments. 
-Here we describe how we use PrairieLearn to create quizzes where students get immediate feedback,  shortening the feedback cycle between student learning and assessment performance. This shorter cycle enables the use of frequent and second-chance testing, especially in large courses, which has been shown to lead to significant improvements in learning outcomes and better final exam performance. 
+Studies have shown that learning and retention of knowledge is enhanced through retrieval practice that incorporates feedback and increased use of formative assessments.
+Here we describe how we use PrairieLearn to create quizzes where students get immediate feedback,  shortening the feedback cycle between student learning and assessment performance. This shorter cycle enables the use of frequent and second-chance testing, especially in large courses, which has been shown to lead to significant improvements in learning outcomes and better final exam performance.
 
-We will use the assessment [E1: Auto-graded randomized exams](https://www.prairielearn.org/pl/course_instance/128605/assessment/2310709) to highlight some of the PrairieLearn features to deliver auto-graded and randomized exams. 
+We will use the assessment [E1: Auto-graded randomized exams](https://www.prairielearn.org/pl/course_instance/128605/assessment/2310709) to highlight some of the PrairieLearn features to deliver auto-graded and randomized exams.
 
 
 ### Instant feedback with retry attempts
@@ -19,12 +22,12 @@ By default, PrairieLearn will auto-grade each question in real-time, and provide
 This short feedback cycle allows students to reach out to instructors right after the test,  enabling them to promptly review and clarify any missed contepts, and consequently make adjustments for upcoming assessments.
 
 
-**Question 1** asks students to compute a variable $c$ given two parameters $a$ and $b$. The formula to compute $c$ is randomized (selected from a set of 4 different formulas) and the parameters $a$ and $b$ are randomized as well. Students have two attempts to complete this question: the first attempt for full credit and the second attempt for partial credit (1/3 points). 
+**Question 1** asks students to compute a variable $c$ given two parameters $a$ and $b$. The formula to compute $c$ is randomized (selected from a set of 4 different formulas) and the parameters $a$ and $b$ are randomized as well. Students have two attempts to complete this question: the first attempt for full credit and the second attempt for partial credit (1/3 points).
 
 **Question 2** asks students to enter the matrix corresponding to a displayed graph, which is generated in real-time based on randomized parameters. Students have two attempts to complete the question. They can also receive partial credit for each attempt, since each entry of the matrix is graded separately.
 
 **Question 3** is highly randomized, in essence mixing 4 different questions into one, since the circuit diagram changes (parallel and series), and the question prompt changes (compute current or resistance).
-Since the solution involves multiple computation steps, students get 5 attempts to complete the question for reduced credit. 
+Since the solution involves multiple computation steps, students get 5 attempts to complete the question for reduced credit.
 
 
 ### Creating exams from question pools
