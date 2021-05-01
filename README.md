@@ -17,5 +17,4 @@ Need help understanding an error or creating content? Check out one of the follo
 1. Real-time help assistance on PrairieLearn's [Slack `#pl-help` channel](https://prairielearn.slack.com).
 1. Looking up the question on our [Frequently Asked Question (FAQ) page](https://prairielearn.readthedocs.io/en/latest/faq/).
 1. Check the [PrairieLearn documentation](https://prairielearn.readthedocs.io/en/latest/)
-1. Attend an in-person or virtual office hours, which are announced at the start of the
-   semester on PrairieLearn's [Slack](https://prairielearn.slack.com) and [e-mail listserv](https://lists.illinois.edu/lists/info/prairielearn-announce).
+1. Attend an in-person or virtual office hours, which are announced at the start of the semester on PrairieLearn's [Slack](https://prairielearn.slack.com) and [e-mail listserv](https://lists.illinois.edu/lists/info/prairielearn-announce).

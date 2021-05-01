@@ -20,7 +20,7 @@ Check the demo homework assessment [HW1: Homework with unlimited attempts](https
 
 ### Group Activities
 
-Research shows that collaborative learning can increase student persistence, improve learning outcomes, and foster better classroom cultures. Using PrairieLearn, instructors can provide group activities where students work collaborativelly in the same assessment, which is shared among all the group members. PrairieLearn provides the option for instructors to pre-arrange teams, or for students to create their own teams.  
+Research shows that collaborative learning can increase student persistence, improve learning outcomes, and foster better classroom cultures. Using PrairieLearn, instructors can provide group activities where students work collaborativelly in the same assessment, which is shared among all the group members. PrairieLearn provides the option for instructors to pre-arrange teams, or for students to create their own teams.
 
 Check the demo group assessment [G1: Learning with your peers](https://www.prairielearn.org/pl/course_instance/128605/assessment/2310480) and corresponding documentation [here](../assessments/07-GroupWork/__docs/docs.md).
 
