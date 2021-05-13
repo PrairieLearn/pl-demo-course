@@ -3,11 +3,13 @@ title: Checkbox
 summary: Select answers from given options.
 ---
 
+![](figSimpleQuestion.png)
+
 ### Simple example
 
 This simple checkbox example only requires writing a `question.html` file. This implementation only creates one unique version of the question, with the same set of parameters and answers. The only level of randomization comes from the order in which the answers are displayed.
 
-![](figSimpleQuestion.png)
+
 
 ```html src=simple/question.html
 ```
