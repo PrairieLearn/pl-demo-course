@@ -3,6 +3,7 @@
     "name": "XC 100",
     "title": "Demo Course",
     "assessmentSets": [
+        {"abbreviation": "QG", "name": "Gallery", "heading": "Question Gallery", "color": "purple1"},
         {"abbreviation": "L", "name": "Lecture", "heading": "Pre-Lecture Activities", "color": "blue1"},
         {"abbreviation": "G", "name": "GroupActivity", "heading": "Group Activities", "color": "pink1"}
     ],
