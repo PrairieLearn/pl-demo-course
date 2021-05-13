@@ -6,7 +6,7 @@ summary: Allow students to select from multiple options.
 ![](figSimpleQuestion.png)
 
 
-## Creating a simple multiple choice question
+## Simple example
 
 A simple implementation of this example only requires writing a `question.html` file. Note that the question parameters, such as the ball mass $m$, the angle $\theta$, the height $h$, the initial velocity $v_0$ and the distance $d$, have fixed values.
 Consequently, the correct answer is also fixed.
@@ -19,7 +19,7 @@ This question uses the attribute `none-of-the-above="true"` in the `pl-multiple-
 Unfortunately, this implementation only creates one unique version of the question, with the same set of parameters and answers.
 The only level of randomization comes from the order in which the answers are displayed and the choice of the "None of the above" option as correct answer.
 
-## Creating a more randomized multiple choice question
+## Complex example
 
 To add variability to the question, we can include dynamically-generated values in `question.html` using [Mustache template syntax](https://mustache.github.io).
 In this example, we can randomly generate the parameters $m$, $h$, $\theta$, $v_0$, and $d$ and compute the corresponding correct answers and distractors.
