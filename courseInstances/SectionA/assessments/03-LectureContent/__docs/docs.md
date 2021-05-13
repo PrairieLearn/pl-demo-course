@@ -12,7 +12,7 @@ We will use the assessment [L1: Learning new concepts asynchronously](https://ww
 
 #### Question 1
 
-This question generator illustrates how we can combine text and equations to introduce new content to students. It follows with simple conceptual checkpoints to help students test their own understanding. Students have two attempts to complete these checkpoints [(repeated variant configuration)](https://github.com/PrairieLearn/pl-demo-course/blob/master/courseInstances/SectionA/assessments/04-Homework/__docs/docs.md), and they can create a new question variant if they answer them correctly or if they use all the retry attempts. At the end of each question variant, a video with the explanation of the question is displayed. Note that embedding videos inside questions is another method of content delivery that can be used with PrairieLearn.
+This question generator illustrates how we can combine text and equations to introduce new content to students. It follows with simple conceptual checkpoints to help students test their own understanding. Students have two attempts to complete these checkpoints ([repeated variant configuration](../../04-Homework/__docs/docs.md)), and they can create a new question variant if they answer them correctly or if they use all the retry attempts. At the end of each question variant, a video with the explanation of the question is displayed. Note that embedding videos inside questions is another method of content delivery that can be used with PrairieLearn.
 
 
 #### Question 2

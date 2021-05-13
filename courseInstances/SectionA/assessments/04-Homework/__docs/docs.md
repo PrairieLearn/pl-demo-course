@@ -16,28 +16,24 @@ PrairieLearn supports the development of **question generators**, defined by a s
 
 In this configuration, the question generator creates unlimited question variants, each one with a single attempt. Once students submit an answer to a question, they receive immediate feedback, indicating if the question was correct, partially correct, or incorrect. The feedback may also include more detailed explanation. No matter if a submission is correct or not, students have the ability to generate another question variant with a single attempt. Moreover, students are not penalized when submitting an incorrect attempt.
 
-<p style="text-align:center;">
- <img src="unlimited-variants.png" alt="single-attempt" width=350></img>
-</p>
+![Unlimited variants with single attemp](./unlimited-variants.png)
 
 Instructors can define the number of times a student needs to correctly answer a question variant to earn full credit. Since question variants present a different version of the question, this repetition provides students with the needed practice to achieve mastery. Even after students reach full credit for a given question, they can continue to work on other question variants for additional practice. We see students coming back to homework assessments when reviewing for exams.
 
-Question generators based on skill levels such as *Remember*, *Understand* and *Apply* from the [Bloom's Taxonomy](https://en.wikipedia.org/wiki/Bloom's_taxonomy) often involve a solution process  that requires information retrival to answer conceptual questions or computation of simple expressions. These skills are the most appropriate for questions using the unlimited variants with single retry option.
+Question generators based on skill levels such as *Remember*, *Understand* and *Apply* from the [Bloom's Taxonomy](https://en.wikipedia.org/wiki/Bloom's_taxonomy) often involve a solution process that requires information retrival to answer conceptual questions or computation of simple expressions. These skills are the most appropriate for questions using the unlimited variants with single retry option.
 The [demo homework assessment](https://www.prairielearn.org/pl/course_instance/128605/assessment/2310476) includes some examples using this configuration:
 
 **Question 1** asks students to demonstrate basic thinking and remembering skills, by selecting the numbers that are prime (or odd, or even, etc). Students need to successully complete at least 3 question variants in order to receive full credit.
 
-**Question 2**  asks students to demonstrate their understanding of binary and decimal numbers, by converting a decimal number to its binary representation. Students need to successully complete at least 2 question variants in order to receive full credit.
+**Question 2** asks students to demonstrate their understanding of binary and decimal numbers, by converting a decimal number to its binary representation. Students need to successully complete at least 2 question variants in order to receive full credit.
 
-**Question 3**  asks students to apply knowledge of derivatives to compute first order derivatives of polynomial equations. They need to successully complete at least 3 question variants in order to receive full credit.
+**Question 3** asks students to apply knowledge of derivatives to compute first order derivatives of polynomial equations. They need to successully complete at least 3 question variants in order to receive full credit.
 
 ### Repeated variant: unlimited variants with prescribed number of retry attempts
 
 More sophisticated skill levels can require multiple steps during the solution process, or combine knowledge of different topics. When creating more complex questions, instructors may want to provide students with additional attempts per question variant. This avoids unnecessary frustration of starting fresh on a new question variant when a small mistake is made during the solution process. Using this configuration, students can create a new question variant if they answer the question correctly or if they use all the retry attempts.
 
-<p style="text-align:center;">
- <img src="set-retry-per-variant.png" alt="single-attempt" width=800></img>
-</p>
+![Unlimited variants with prescribed number of retry attempts](./set-retry-per-variant.png)
 
 Similarly to the above configuration, instructors can define the number of times a student needs to correctly answer a question variant to earn full credit. The [demo homework assessment](https://www.prairielearn.org/pl/course_instance/128605/assessment/2310476) includes some examples using this configuration:
 
@@ -51,8 +47,6 @@ Similarly to the above configuration, instructors can define the number of times
 There are some situations where we want students to receive a single question variant
 and have unlimited attempts to complete the question successfully. This is desirable when the question involves a lot of computation, or includes specialized coding.
 
-<p style="text-align:center;">
- <img src="one-variant-unlimited-attempts.png" alt="single-attempt" width=800></img>
-</p>
+![Unlimited retry attempts for a single question variant](./one-variant-unlimited-attempts.png)
 
 **Question 6** from [demo homework assessment](https://www.prairielearn.org/pl/course_instance/128605/assessment/2310476) asks students to apply knowledge from a given topic to contruct the solution of a "real-world" problem. Students have unlimited attempts to submit the correct solution for full credit.

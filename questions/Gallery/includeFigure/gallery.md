@@ -52,7 +52,7 @@ The correct answers can correspond to either *negative* or *positive* function v
 
 **3) Dynamic plot for the randomized function**
 
- In `pl-figure` with `type="dynamic"` the contents of the image file are returned by the function `file()` located in `server.py` (since the plot depends on the choice of the function coefficients). In this example, the code in `file()`  generates the  "fake" image `figure.png`
+ In `pl-figure` with `type="dynamic"` the contents of the image file are returned by the function `file()` located in `server.py` (since the plot depends on the choice of the function coefficients). In this example, the code in `file()` generates the "fake" image `figure.png`
 
 **4) Checkbox answers matching the randomized parameters**
 
