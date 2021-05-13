@@ -10,7 +10,7 @@ This is an example showing how we can add an image to a question
 
 ![](figSimpleQuestion.png)
 
-where we only need to write the HTML file `question.html`:
+where we only need to write the `question.html` file:
 
 ```html src=simple/question.html
 ```
@@ -39,9 +39,10 @@ The above script randomizes and computes several aspects of the question:
 1) Randomized function $f(x)$:
 
 The coefficients $a, b, c$ are selected from a list of possible coefficients to ensure the function
-will satisfy some pre-determined requirements. We use the Python library [Sympy](https://www.sympy.org/en/index.html) to create the symbolic expression for $f(x) = a x^3 + b x^2 + c x - 9 $ and store this expression as the variable `f` in the `data['params']` dictionary.
+will satisfy some pre-determined requirements. We use the Python library [Sympy](https://www.sympy.org/en/index.html) to create the symbolic expression for
+$f(x) = a x^3 + b x^2 + c x - 9$ and store this expression as the variable `f` in the `data['params']` dictionary.
 
-2) Randomized expected sign for correct answers**
+2) Randomized expected sign for correct answers
 
 The correct answers can correspond to either *negative* or *positive* function values. This option is stored as variable `option` in the `data["params"]` dictionary.
 
