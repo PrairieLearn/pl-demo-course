@@ -1,6 +1,7 @@
 ---
 title: Homework
 summary: Mastery-based homework assessments
+prairielearn_url: https://www.prairielearn.org/pl/course_instance/128605/assessment/2310476
 ---
 
 ## Mastery-based homework assessments

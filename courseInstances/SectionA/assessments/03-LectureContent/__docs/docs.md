@@ -1,6 +1,7 @@
 ---
 title: Lecture
 summary: Introducing new concepts online with checkpoints and instant feedback
+prairielearn_url: https://www.prairielearn.org/pl/course_instance/128605/assessment/2310475
 ---
 
 ## Introducing course content online

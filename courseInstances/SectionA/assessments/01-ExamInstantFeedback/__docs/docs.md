@@ -1,6 +1,7 @@
 ---
 title: Exam
 summary: Summative assessments that are auto-graded with instant feedback and retry opportunities
+prairielearn_url: https://www.prairielearn.org/pl/course_instance/128605/assessment/2310709
 ---
 
 ## Auto-graded randomized exams

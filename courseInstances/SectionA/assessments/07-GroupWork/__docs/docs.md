@@ -1,6 +1,7 @@
 ---
 title: Group work
 summary: Collaborative learning activities
+prairielearn_url: https://www.prairielearn.org/pl/course_instance/128605/assessment/2310480
 ---
 
 ## Group Activities
