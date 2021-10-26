@@ -9,10 +9,6 @@
     "requireHonorCode": false,
     "allowAccess": [
         {
-            "role": "TA",
-            "credit": 100
-        },
-        {
             "comment": "Set the start/end dates for the quiz period. By using the showClosedAssessment: false, students do not have access to the quiz questions after the time limit is reached",
             "mode": "Public",
             "credit": 100,

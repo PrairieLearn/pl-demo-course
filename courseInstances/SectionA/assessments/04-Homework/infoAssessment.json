@@ -6,10 +6,6 @@
     "number": "1",
     "allowAccess": [
         {
-            "role": "TA",
-            "credit": 100
-        },
-        {
             "comment": "Set end date for 100% credit",
             "mode": "Public",
             "credit": 100,

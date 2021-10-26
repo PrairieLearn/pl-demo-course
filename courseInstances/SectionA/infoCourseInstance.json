@@ -2,11 +2,6 @@
     "uuid": "a2c16a02-7f73-43d0-b5ec-5eb1efb8ae51",
     "shortName": "SecA",
     "longName": "Section A",
-    "userRoles": {
-        "matt@prairielearn.com": "TA",
-        "mariana@prairielearn.com": "Instructor",
-        "nathan@prairielearn.com": "TA"
-    },
     "allowAccess": [
         {
             "comment": "you may want to set access to just your institution and semester start/end dates",
